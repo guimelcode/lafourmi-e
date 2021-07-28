@@ -8,10 +8,12 @@
 </head>
 <body  <?php body_class();?> >
 
-<header>
+<header id="main-header">
     <a href="<?php echo home_url( '/' ) ?>">
         <h1>la fourmi-e</h1>
     </a>
 </header>
+
+<main id="main-content">
 
 <?php wp_body_open();?>

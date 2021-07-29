@@ -12,6 +12,13 @@
     <a href="<?php echo home_url( '/' ) ?>">
         <h1>la fourmi-e</h1>
     </a>
+    <?php wp_nav_menu( 
+        array(
+            'theme_location' => 'main', 
+            'container' => 'ul', 
+            'menu_class' => 'nav-header-wrapper'
+            )
+    ); ?>
 </header>
 
 <main id="main-content">

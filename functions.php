@@ -11,6 +11,9 @@ register_nav_menus( array(
 	'footer' => 'Bas de page',
 ) );
 
+// Types de publication et taxonomies
+require_once get_template_directory() . '/inc/cpt.php';
+
 // Enregistrement des ressources CSS et Js du thème
 function lafourmie_register_assets()
 {

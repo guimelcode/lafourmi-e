@@ -1,5 +1,57 @@
 @import './normalize';
+@import './variables';
+
+html {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    // background-color: red; /*for test*/
+    display: block;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.35em;
+    font-size: $fontSize * map-get($typoMod, texte-1) * 1px;
+    line-height: $inter-lineHeightComputed * map-get($typoMod, texte-1) * 1px;
+}
+
+/* Basics */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'American Typewriter', serif;
+    font-weight: normal;
+    margin: 0 0 .5rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 4.125rem;
+    font-size: $fontSize * map-get($typoMod, titre-2) * 1px;
+    line-height: $american-lineHeightComputed * map-get($typoMod, titre-2) * 1px;
+}
+
+p {
+    margin: 0 0 1.5rem;
+}
+
+
+/**********/
+
+#main-content {
+    display: block;
+    // height: 100vh;
+    // margin: 0;
+    margin: 0 10px 0 0;
+    padding: 0;
 }

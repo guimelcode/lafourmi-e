@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -342,6 +343,139 @@ template {
 }
 
 /* Variables */
+/* Colors */
+/*
+Thème pour Overlay ScrollBar 
+*/
+.os-theme-fourmi-e > .os-scrollbar-horizontal {
+  right: 10px;
+  height: 10px;
+  padding: 0;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-vertical {
+  bottom: 10px;
+  width: 10px;
+  padding: 0;
+}
+
+.os-theme-fourmi-e.os-host-rtl > .os-scrollbar-horizontal {
+  left: 10px;
+  right: 0;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-corner {
+  height: 10px;
+  width: 10px;
+  background-color: transparent;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-horizontal > .os-scrollbar-track {
+  background: transparent;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-vertical > .os-scrollbar-track {
+  background: transparent;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-horizontal > .os-scrollbar-track:hover {
+  background: transparent;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-vertical > .os-scrollbar-track:hover {
+  background: transparent;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-horizontal > .os-scrollbar-track.active {
+  background: transparent;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-vertical > .os-scrollbar-track.active {
+  background: transparent;
+}
+
+.os-theme-fourmi-e.os-host-transition > .os-scrollbar-horizontal > .os-scrollbar-track {
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.os-theme-fourmi-e.os-host-transition > .os-scrollbar-vertical > .os-scrollbar-track {
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-horizontal > .os-scrollbar-track > .os-scrollbar-handle:before,
+.os-theme-fourmi-e > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-horizontal > .os-scrollbar-track > .os-scrollbar-handle:before {
+  top: 0;
+  bottom: 0;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle:before {
+  left: 0;
+  right: 0;
+}
+
+.os-theme-fourmi-e.os-host-rtl > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle:before {
+  right: 0;
+  left: 0;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-horizontal > .os-scrollbar-track > .os-scrollbar-handle {
+  border-radius: 0;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle {
+  border-radius: 0;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-horizontal > .os-scrollbar-track > .os-scrollbar-handle {
+  min-width: 30px;
+  max-width: none;
+  background: #F89898;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle {
+  min-height: 30px;
+  max-height: none;
+  background: #F89898;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-horizontal > .os-scrollbar-track > .os-scrollbar-handle:hover {
+  background: #F56969;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle:hover {
+  background: #F56969;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-horizontal > .os-scrollbar-track > .os-scrollbar-handle.active {
+  background: #9A2525;
+}
+
+.os-theme-fourmi-e > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle.active {
+  background: #9A2525;
+}
+
+.os-theme-fourmi-e.os-host-transition > .os-scrollbar-horizontal > .os-scrollbar-track > .os-scrollbar-handle {
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.os-theme-fourmi-e.os-host-transition > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle {
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
 html {
   display: block;
   width: 100%;

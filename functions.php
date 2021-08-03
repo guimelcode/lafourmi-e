@@ -72,7 +72,16 @@ function lafourmie_register_assets()
     // Ajout de jQuery
     wp_enqueue_script('jquery');
 
-    // Ajout du JS
+    // Ajout de Overlay ScrollBar
+    wp_enqueue_script(
+        'overlayScrollbars',
+        get_template_directory_uri() . '/js/lib/jquery.overlayScrollbars.min.js',
+        array('jquery'),
+        '1.13.0',
+        true
+    );
+
+    // Ajout du JS du thème
     wp_enqueue_script(
         'lafourmie',
         get_template_directory_uri() . '/js/script.js',
@@ -89,6 +98,13 @@ function lafourmie_register_assets()
         '1.0'
     );
 
+    // Ajout du CSS de Overlay ScrollBar
+    wp_enqueue_style(
+        'OverlayScrollbars',
+        get_template_directory_uri() . '/css/lib/OverlayScrollbars.min.css',
+        array(),
+        '1.13.0'
+    );
     // Ajout du CSS -- issue d'un scss
     wp_enqueue_style(
         'lafourmie',

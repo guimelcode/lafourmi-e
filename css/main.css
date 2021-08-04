@@ -686,7 +686,6 @@ p {
   height: fit-content;
   padding: 20px 40px 20px 20px;
   margin: 0;
-  background-color: aquamarine;
   -ms-grid-column: 1;
   -ms-grid-column-span: 24;
   grid-column: 1/25;
@@ -719,7 +718,6 @@ p {
   height: fit-content;
   padding: 20px 40px 20px 20px;
   margin: 0;
-  background-color: #bb46ff;
   -ms-grid-column: 11;
   -ms-grid-column-span: 14;
   grid-column: 11/25;

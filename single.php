@@ -5,16 +5,16 @@
 	</header> -->
 	<?php if (have_posts()): while (have_posts()): the_post();?>
 		<article class="post">
-			<header class="post-header segment">
+			<header class="post-header segment bg-rouge-25">
 				<?php if(get_the_post_thumbnail( )): ?>
 					<div class="post-header-image">
 						<?php the_post_thumbnail(); /* Trouver l'image */?>
 					</div>
 				<?php endif; ?>
-				<h1 class="post-header-title">
+				<h1 class="post-header-title bg-violet-75">
 					<?php the_title()?>
 				</h1>
-				<div class="post-header-meta">
+				<div class="post-header-meta bg-vert-25">
 					<ul>
 						<?php if( get_the_date() !== null): ?>
 							<li> <?php the_date();  ?> </li>

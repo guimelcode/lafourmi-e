@@ -2,6 +2,7 @@
 @import './variables';
 @import './backgrounds';
 @import './os-fourmi-e';
+@import './fonts';
 
 html {
     display: block;
@@ -23,6 +24,7 @@ body {
     line-height: 1.35em;
     font-size: $fontSize * map-get($typoMod, texte-1) * 1px;
     line-height: $inter-lineHeightComputed * map-get($typoMod, texte-1) * 1px;
+    font-weight: 500;
 }
 
 /* Basics */

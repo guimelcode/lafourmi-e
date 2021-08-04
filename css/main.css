@@ -344,6 +344,112 @@ template {
 
 /* Variables */
 /* Colors */
+/*** BackGrounds ***/
+.bg-blanc {
+  background-color: white;
+  color: black;
+}
+
+.bg-noir-100 {
+  background-color: black;
+  color: white;
+}
+
+.bg-noir-75 {
+  background-color: #9C9C9C;
+  color: black;
+}
+
+.bg-noir-50 {
+  background-color: #D0D0D0;
+  color: black;
+}
+
+.bg-noir-25 {
+  background-color: #EDEDED;
+  color: black;
+}
+
+.bg-rouge-100 {
+  background-color: #9A2525;
+  color: white;
+}
+
+.bg-rouge-75 {
+  background-color: #F56969;
+  color: black;
+}
+
+.bg-rouge-50 {
+  background-color: #F89898;
+  color: black;
+}
+
+.bg-rouge-25 {
+  background-color: #FCCCCC;
+  color: black;
+}
+
+.bg-bleu-100 {
+  background-color: #385F5F;
+  color: white;
+}
+
+.bg-bleu-75 {
+  background-color: #6BF4F4;
+  color: black;
+}
+
+.bg-bleu-50 {
+  background-color: #A3F8F8;
+  color: black;
+}
+
+.bg-bleu-25 {
+  background-color: #E7FDFD;
+  color: black;
+}
+
+.bg-vert-100 {
+  background-color: #196433;
+  color: white;
+}
+
+.bg-vert-75 {
+  background-color: #B0F46B;
+  color: black;
+}
+
+.bg-vert-50 {
+  background-color: #CDF8A2;
+  color: black;
+}
+
+.bg-vert-25 {
+  background-color: #F2FDE7;
+  color: black;
+}
+
+.bg-violet-100 {
+  background-color: #670EBF;
+  color: white;
+}
+
+.bg-violet-75 {
+  background-color: #CDA2F8;
+  color: black;
+}
+
+.bg-violet-50 {
+  background-color: #EAD8FC;
+  color: black;
+}
+
+.bg-violet-25 {
+  background-color: #F5ECFE;
+  color: black;
+}
+
 /*
 Thème pour Overlay ScrollBar 
 */
@@ -493,8 +599,8 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   line-height: 1.35em;
-  font-size: 16.15px;
-  line-height: 23.94px;
+  font-size: 14.45px;
+  line-height: 21.42px;
 }
 
 /* Basics */

@@ -14,57 +14,8 @@ register_nav_menus(array(
 // Types de publication et taxonomies
 require_once get_template_directory() . '/inc/cpt.php';
 
-// Palette de couleur du thème
-function mytheme_setup_theme_supported_features()
-{
+require_once get_template_directory() . '/inc/colors.php';
 
-    $color_palette = array(
-
-        array(
-            'name' => __('Blue', 'wpastra'),
-            'slug' => 'monte-blue',
-            'color' => '#406186',
-        ),
-        array(
-            'name' => __('Pink', 'wpastra'),
-            'slug' => 'monte-pink',
-            'color' => '#df7c88',
-        ),
-        array(
-            'name' => __('Yellow', 'wpastra'),
-            'slug' => 'monte-yellow',
-            'color' => '#ffc372',
-        ),
-        array(
-            'name' => __('Purple', 'wpastra'),
-            'slug' => 'monte-purple',
-            'color' => '#b5aebe',
-        ),
-        array(
-            'name' => __('Light Yellow', 'wpastra'),
-            'slug' => 'monte-light-yellow',
-            'color' => '#ffd49c',
-        ),
-        array(
-            'name' => __('Light Pink', 'wpastra'),
-            'slug' => 'monte-light-pink',
-            'color' => '#e8a3ab',
-        ),
-        array(
-            'name' => __('Grey', 'wpastra'),
-            'slug' => 'monte-grey',
-            'color' => '#393939',
-        ),
-        array(
-            'name' => __('White', 'wpastra'),
-            'slug' => 'monte-white',
-            'color' => '#ffffff',
-        ),
-
-    );
-    add_theme_support('editor-color-palette', $color_palette);
-}
-add_action('after_setup_theme', 'mytheme_setup_theme_supported_features');
 
 // Enregistrement des ressources CSS et Js du thème
 function lafourmie_register_assets()

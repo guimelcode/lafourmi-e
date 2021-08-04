@@ -5,4 +5,8 @@ $(document).ready(function () {
     className: "os-theme-fourmi-e",
     scrollbars: { visibility: "visible" },
   }); //test
+  $(".scroll-wrap ").overlayScrollbars({
+    className: "os-theme-fourmi-e",
+    scrollbars: { visibility: "visible" },
+  }); //test
 });

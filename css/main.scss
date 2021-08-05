@@ -70,3 +70,62 @@ p {
 }
 
 @import './single';
+
+#archive {
+    .archive-section {
+        // position: relative;
+
+        .archive-table {
+            grid-column: span 12;
+            border-spacing: 0;
+            border-collapse: collapse;
+
+            tr {
+                font-size: 20px;
+
+                &:hover {
+                    background-color: $rouge-25;
+                }
+
+                td {
+                    padding: 10px;
+                    border-bottom: 1px solid black;
+
+                    a {
+                        text-decoration: none;
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .archive-img {
+            grid-column: 14/22;
+            position: relative;
+            height: 100%;
+
+            &-wrap {
+                position: absolute;
+                display: none;
+                // visibility: hidden;
+                // opacity: 0;
+                z-index: 10;
+                top: 0;
+                transition: top .15s cubic-bezier(0.22, 0.61, 0.36, 1);
+
+                &.visible {
+                    display: block;
+                    visibility: visible;
+                }
+
+                .wp-post-image {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

@@ -893,4 +893,58 @@ p {
   list-style: none;
   padding: 0;
 }
+
+#archive .archive-section .archive-table {
+  grid-column: span 12;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+#archive .archive-section .archive-table tr {
+  font-size: 20px;
+}
+
+#archive .archive-section .archive-table tr:hover {
+  background-color: #FCCCCC;
+}
+
+#archive .archive-section .archive-table tr td {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+#archive .archive-section .archive-table tr td a {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+#archive .archive-section .archive-img {
+  -ms-grid-column: 14;
+  -ms-grid-column-span: 8;
+  grid-column: 14/22;
+  position: relative;
+  height: 100%;
+}
+
+#archive .archive-section .archive-img-wrap {
+  position: absolute;
+  display: none;
+  z-index: 10;
+  top: 0;
+  -webkit-transition: top 0.15s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: top 0.15s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#archive .archive-section .archive-img-wrap.visible {
+  display: block;
+  visibility: visible;
+}
+
+#archive .archive-section .archive-img-wrap .wp-post-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 /*# sourceMappingURL=main.css.map */

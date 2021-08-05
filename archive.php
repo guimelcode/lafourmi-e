@@ -22,7 +22,7 @@
 	
 	<div class="archive-section segment bg-vert-25">
 
-		<table class="archive-table">
+		<table class="archive-table conteneur col-12 bg-bleu-50">
 		<?php if (have_posts()): while (have_posts()): the_post()?>
 			<tr data-id="<?php the_ID() ?>">
 				<td>
@@ -34,7 +34,7 @@
 			</tr>
 			<?php endwhile;endif;?>
 		</table>
-		<div class="archive-img">
+		<div class="archive-img conteneur col-10-start-14 ">
 		<?php if (have_posts()): while (have_posts()): the_post()?>
 			<div class="archive-img-wrap" data-id="<?php the_ID() ?>">
 			<?php the_post_thumbnail(); /* Trouver l'image */ ?> 

@@ -3,6 +3,7 @@
 @import './backgrounds';
 @import './os-fourmi-e';
 @import './fonts';
+@import './grid_system';
 
 html {
     display: block;
@@ -67,6 +68,19 @@ p {
     gap: 0;
     padding-left: 4%;
     align-items: end;
+
+    .conteneur {
+        position: relative;
+        box-sizing: border-box;
+        padding: 20px 40px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-self: flex-start;
+        // width: 100%;
+        min-width: calc(100% - 60px);
+        height: calc(100% - 40px);
+    }
 }
 
 @import './single';
@@ -76,9 +90,10 @@ p {
         // position: relative;
 
         .archive-table {
-            grid-column: span 12;
+            // grid-column: span 12;
             border-spacing: 0;
             border-collapse: collapse;
+            min-height: 100%;
 
             tr {
                 font-size: 20px;
@@ -102,7 +117,7 @@ p {
         }
 
         .archive-img {
-            grid-column: 14/22;
+            // grid-column: 14/22;
             position: relative;
             height: 100%;
 

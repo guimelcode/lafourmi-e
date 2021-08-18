@@ -21708,6 +21708,15 @@ p {
   height: calc(100% - 40px);
 }
 
+.segment .conteneur::after {
+  content: '';
+  display: block;
+  background-color: rgba(255, 255, 255, 0.33);
+  height: 100%;
+  width: auto;
+  margin: 0 -40px -20px -20px;
+}
+
 #single .post-header {
   -ms-grid-rows: min-content min-content min-content;
       grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
@@ -21809,6 +21818,10 @@ p {
   padding: 0;
 }
 
+#archive .archive-section {
+  min-height: 400px;
+}
+
 #archive .archive-section .archive-table {
   border-spacing: 0;
   border-collapse: collapse;
@@ -21816,7 +21829,8 @@ p {
 }
 
 #archive .archive-section .archive-table tr {
-  font-size: 20px;
+  font-size: 30px;
+  line-height: 1.2em;
 }
 
 #archive .archive-section .archive-table tr:hover {
@@ -21856,7 +21870,9 @@ p {
 
 #archive .archive-section .archive-img-wrap .wp-post-image {
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
+  max-width: 100%;
+  max-height: 400px;
 }
 /*# sourceMappingURL=main.css.map */

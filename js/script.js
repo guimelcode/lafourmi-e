@@ -61,7 +61,7 @@ $(document).ready(function () {
           top:
             e.pageY -
             imgFromID[0].offsetHeight / 2 -
-            theRow.parents(".archive-table")[0].offsetTop / 1.25 +
+            theRow.parents(".archive-table")[0].offsetTop / 1 +
             "px",
         });
       },

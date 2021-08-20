@@ -23,10 +23,17 @@
         flex-direction: column;
         justify-content: flex-end;
         padding-left: 5%;
+        padding-top: 10px;
         margin-bottom: 2px;
         box-shadow: 0px 2px currentColor;
-
+        // @media (min-width: map-get($breakpoints, sm)) {
+        //     padding-left: 4%;
+        // }
         @media (min-width: map-get($breakpoints, md)) {
+            grid-column: 1/10;
+            margin-bottom: 0;
+        }
+        @media (min-width: map-get($breakpoints, lg)) {
             grid-column: 1/12;
             margin-bottom: 0;
         }
@@ -36,11 +43,34 @@
             bottom: 0;
             font-size: $fontSize * 3 * 1px;
             line-height: $american-lineHeightComputed * 3 * 1px;
+            font-size: 17vw;
+            line-height: 18vw;
             margin: 0;
+            
+            @media (min-width: map-get($breakpoints, sm)) {
+                font-size: 14vw;
+                line-height: 15vw;
+                // font-size: $fontSize * 3.5 * 1px;
+                // line-height: $american-lineHeightComputed * 3.5 * 1px;
+            }
 
             @media (min-width: map-get($breakpoints, md)) {
+                bottom: -$american-lineHeightComputed * .35 * 1px;
+                font-size: $fontSize * 3 * 1px;
+                line-height: $american-lineHeightComputed * 3 * 1px;
+            }
+            @media (min-width: map-get($breakpoints, lg)) {
+                bottom: -$american-lineHeightComputed * .6 * 1px;
+                font-size: $fontSize * 4.5 * 1px;
+                line-height: $american-lineHeightComputed * 4.5 * 1px;
+            }
+            @media (min-width: map-get($breakpoints, xl)) {
+                bottom: -$american-lineHeightComputed * .85 * 1px;
+                font-size: $fontSize * 5.5 * 1px;
+                line-height: $american-lineHeightComputed * 5.5 * 1px;
+            }
+            @media (min-width: map-get($breakpoints, xxl)) {
                 bottom: -$american-lineHeightComputed * 1 * 1px;
-
                 font-size: $fontSize * 6 * 1px;
                 line-height: $american-lineHeightComputed * 6 * 1px;
             }
@@ -56,6 +86,9 @@
         flex-direction: column;
 
         @media (min-width: map-get($breakpoints, md)) {
+            grid-column: 10/25;
+        }
+        @media (min-width: map-get($breakpoints, lg)) {
             grid-column: 12/25;
         }
 
@@ -117,6 +150,10 @@
                 line-height: $american-lineHeightComputed * 1.35 * 1px;
 
                 @media (min-width: map-get($breakpoints, md)) {
+                    font-size: $fontSize * 1.25 * 1px;
+                    line-height: $american-lineHeightComputed * 1.25 * 1px;
+                }
+                @media (min-width: map-get($breakpoints, lg)) {
                     font-size: $fontSize * 1.6 * 1px;
                     line-height: $american-lineHeightComputed * 1.6 * 1px;
                 }

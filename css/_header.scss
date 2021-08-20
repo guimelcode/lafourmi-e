@@ -1,0 +1,203 @@
+#main-header {
+    width: calc(100% - 10px);
+    // grid-template-rows: 1fr;
+    margin: 0 10px 2px 0;
+    padding-left: 0;
+
+    a {
+        color: $noir-100;
+        text-decoration: none;
+        background-color: $blanc;
+        transition: background-color .33s;
+
+        &:hover {
+            background-color: $vert-50;
+            box-shadow: 0px 2px currentColor;
+        }
+    }
+
+    #site-header-home {
+        height: 100%;
+        display: flex;
+        grid-column: 1/25;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 5%;
+        margin-bottom: 2px;
+        box-shadow: 0px 2px currentColor;
+
+        @media (min-width: map-get($breakpoints, md)) {
+            grid-column: 1/12;
+            margin-bottom: 0;
+        }
+
+        h1 {
+            position: relative;
+            bottom: 0;
+            font-size: $fontSize * 3 * 1px;
+            line-height: $american-lineHeightComputed * 3 * 1px;
+            margin: 0;
+
+            @media (min-width: map-get($breakpoints, md)) {
+                bottom: -$american-lineHeightComputed * 1 * 1px;
+
+                font-size: $fontSize * 6 * 1px;
+                line-height: $american-lineHeightComputed * 6 * 1px;
+            }
+        }
+    }
+
+    .main-nav {
+        grid-column: 1/25;
+        height: 100%;
+        height: calc(100% + 2px);
+        margin: 0 0 -2px 0;
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: map-get($breakpoints, md)) {
+            grid-column: 12/25;
+        }
+
+        &-button {
+            width: 100%;
+            background-color: $blanc;
+            border: none;
+            border-top: solid $noir-50 2px;
+            border-bottom: solid $noir-100 2px;
+            font-size: $fontSize * 1.5 * 1px;
+            height: 40px;
+
+            @media (min-width: map-get($breakpoints, md)) {
+                display: none;
+            }
+        }
+
+        .nav-header-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 2px;
+            align-items: end;
+
+            height: 100%;
+
+
+            list-style: none;
+            margin: 0;
+
+            padding: 0;
+            padding-bottom: 0;
+
+            /*mobile Test*/
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1s;
+
+            &.is-open {
+                max-height: 900px;
+                padding-bottom: 2px;
+
+            }
+
+            @media (min-width: map-get($breakpoints, md)) {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr 1fr;
+                max-height: 900px;
+                padding-bottom: 2px;
+            }
+
+            .menu-item {
+                display: block;
+                width: 100%;
+                height: 100%;
+                font-family: 'American Typewriter', serif;
+                font-weight: normal;
+                font-size: $fontSize * 1.35 * 1px;
+                line-height: $american-lineHeightComputed * 1.35 * 1px;
+
+                @media (min-width: map-get($breakpoints, md)) {
+                    font-size: $fontSize * 1.6 * 1px;
+                    line-height: $american-lineHeightComputed * 1.6 * 1px;
+                }
+
+                &.current_page_item a,
+                &.current-menu-item a {
+                    background-color: $violet-50;
+                    box-shadow: 0px 2px currentColor;
+                }
+
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    width: calc(100% - 16px);
+                    height: calc(100% - 15px);
+                    padding: 10px 8px 5px;
+                }
+
+                &.nav {
+                    &-champs-expression {
+                        grid-column: 1/2;
+                        grid-row: 1/2;
+
+                        @media (min-width: map-get($breakpoints, md)) {
+                            grid-column: 1/2;
+                            grid-row: 1/2;
+                        }
+                    }
+
+                    &-in-cite {
+                        grid-column: 2/3;
+                        grid-row: 1/2;
+
+                        @media (min-width: map-get($breakpoints, md)) {
+                            grid-column: 1/2;
+                            grid-row: 2/3;
+                        }
+                    }
+
+                    &-artistes {
+                        grid-column: 1/2;
+                        grid-row: 2/3;
+
+                        @media (min-width: map-get($breakpoints, md)) {
+                            grid-column: 2/3;
+                            grid-row: 1/2;
+                        }
+                    }
+
+                    &-residences {
+                        grid-column: 2/3;
+                        grid-row: 2/3;
+
+                        @media (min-width: map-get($breakpoints, md)) {
+                            grid-column: 2/3;
+                            grid-row: 2/3;
+                        }
+                    }
+
+                    &-collaborations {
+                        grid-column: 1/2;
+                        grid-row: 3/4;
+
+                        @media (min-width: map-get($breakpoints, md)) {
+                            grid-column: 3/4;
+                            grid-row: 1/2;
+                        }
+                    }
+
+                    &-archives {
+                        grid-column: 2/3;
+                        grid-row: 3/4;
+
+                        @media (min-width: map-get($breakpoints, md)) {
+                            grid-column: 3/4;
+                            grid-row: 2/3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

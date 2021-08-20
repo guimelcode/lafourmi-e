@@ -72,4 +72,24 @@ $(document).ready(function () {
   };
 
   $.each($(".archive-section"), (i, el) => archiveBehavior($(el)));
+
+
+  const menu = $('.main-nav .nav-header-wrapper')
+  const buttonMenu = $('.main-nav-button')
+
+  buttonMenu.on('click', function() {
+    // console.log(menu.hasClass('is-open'));
+    menu.toggleClass('is-open')
+    if(menu.hasClass('is-open')) {
+      setTimeout(() => {
+        
+        buttonMenu.html('&uarr;')
+      }, 500);
+    } else {
+      setTimeout(() => {
+        buttonMenu.html('&darr;')
+        
+      }, 500);
+    }
+  })
 });

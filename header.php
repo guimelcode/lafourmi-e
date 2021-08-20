@@ -8,17 +8,21 @@
 </head>
 <body  <?php body_class();?> >
 
-<header id="main-header">
-    <a href="<?php echo home_url( '/' ) ?>">
+<header id="main-header" class="segment">
+    <a href="<?php echo home_url( '/' ) ?>" id="site-header-home">
         <h1>la fourmi-e</h1>
     </a>
+    <nav class="main-nav">
+
     <?php wp_nav_menu( 
         array(
             'theme_location' => 'main', 
             'container' => 'ul', 
-            'menu_class' => 'nav-header-wrapper'
+            'menu_class' => 'nav-header-wrapper',
             )
     ); ?>
+        <button class="main-nav-button">&darr;</button>
+    </nav>
 </header>
 
 <main id="main-content">

@@ -21643,9 +21643,9 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   line-height: 1.35em;
-  font-size: 15.3px;
+  font-size: 16.2px;
   line-height: 22.68px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* Basics */
@@ -21659,14 +21659,87 @@ h4 {
 }
 
 h1 {
-  font-size: 2rem;
-  line-height: 4.125rem;
-  font-size: 51px;
-  line-height: 61.2px;
+  font-size: 35.1px;
+  line-height: 44.46px;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 40.5px;
+    line-height: 51.3px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 54px;
+    line-height: 68.4px;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 62.1px;
+    line-height: 78.66px;
+  }
+}
+
+h2 {
+  font-size: 23.4px;
+  line-height: 29.64px;
+}
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 27px;
+    line-height: 34.2px;
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 36px;
+    line-height: 45.6px;
+  }
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 41.4px;
+    line-height: 52.44px;
+  }
 }
 
 p {
   margin: 0 0 1.5rem;
+  font-weight: 400;
+  font-size: 16.2px;
+  line-height: 20.52px;
+}
+
+@media (min-width: 576px) {
+  p {
+    font-size: 18.63px;
+    line-height: 23.598px;
+  }
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 20.25px;
+    line-height: 25.65px;
+  }
+}
+
+@media (min-width: 992px) {
+  p {
+    font-size: 21.06px;
+    line-height: 26.676px;
+  }
+}
+
+figcaption p {
+  font-weight: 300;
 }
 
 /**********/
@@ -21750,8 +21823,8 @@ p {
 }
 
 #single .post-header-title {
-  font-size: 51px;
-  line-height: 61.2px;
+  font-size: 54px;
+  line-height: 68.4px;
   text-align: end;
   display: block;
   height: -webkit-fit-content;
@@ -21769,8 +21842,8 @@ p {
 
 @media (min-width: 768px) {
   #single .post-header-title {
-    font-size: 68px;
-    line-height: 81.6px;
+    font-size: 72px;
+    line-height: 91.2px;
     -ms-grid-column: 6;
     -ms-grid-column-span: 13;
     grid-column: 6/19;
@@ -21783,8 +21856,8 @@ p {
 #single .post-header-meta {
   font-family: 'American Typewriter', serif;
   font-weight: normal;
-  font-size: 22.3125px;
-  line-height: 26.775px;
+  font-size: 23.625px;
+  line-height: 29.925px;
   display: block;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -21801,8 +21874,8 @@ p {
 
 @media (min-width: 768px) {
   #single .post-header-meta {
-    font-size: 29.75px;
-    line-height: 35.7px;
+    font-size: 31.5px;
+    line-height: 39.9px;
     -ms-grid-column: 19;
     -ms-grid-column-span: 6;
     grid-column: 19/25;
@@ -21881,8 +21954,8 @@ p {
 #main-header #site-header-home h1 {
   position: relative;
   bottom: 0;
-  font-size: 51px;
-  line-height: 61.2px;
+  font-size: 54px;
+  line-height: 68.4px;
   font-size: 17vw;
   line-height: 18vw;
   margin: 0;
@@ -21897,33 +21970,33 @@ p {
 
 @media (min-width: 768px) {
   #main-header #site-header-home h1 {
-    bottom: -7.14px;
-    font-size: 51px;
-    line-height: 61.2px;
+    bottom: -7.98px;
+    font-size: 54px;
+    line-height: 68.4px;
   }
 }
 
 @media (min-width: 992px) {
   #main-header #site-header-home h1 {
-    bottom: -12.24px;
-    font-size: 76.5px;
-    line-height: 91.8px;
+    bottom: -13.68px;
+    font-size: 81px;
+    line-height: 102.6px;
   }
 }
 
 @media (min-width: 1200px) {
   #main-header #site-header-home h1 {
-    bottom: -17.34px;
-    font-size: 93.5px;
-    line-height: 112.2px;
+    bottom: -19.38px;
+    font-size: 99px;
+    line-height: 125.4px;
   }
 }
 
 @media (min-width: 1400px) {
   #main-header #site-header-home h1 {
-    bottom: -20.4px;
-    font-size: 102px;
-    line-height: 122.4px;
+    bottom: -22.8px;
+    font-size: 108px;
+    line-height: 136.8px;
   }
 }
 
@@ -21965,7 +22038,7 @@ p {
   border: none;
   border-top: solid #D0D0D0 2px;
   border-bottom: solid black 2px;
-  font-size: 25.5px;
+  font-size: 27px;
   height: 40px;
 }
 
@@ -22020,21 +22093,21 @@ p {
   height: 100%;
   font-family: 'American Typewriter', serif;
   font-weight: normal;
-  font-size: 22.95px;
-  line-height: 27.54px;
+  font-size: 24.3px;
+  line-height: 30.78px;
 }
 
 @media (min-width: 768px) {
   #main-header .main-nav .nav-header-wrapper .menu-item {
-    font-size: 21.25px;
-    line-height: 25.5px;
+    font-size: 22.5px;
+    line-height: 28.5px;
   }
 }
 
 @media (min-width: 992px) {
   #main-header .main-nav .nav-header-wrapper .menu-item {
-    font-size: 27.2px;
-    line-height: 32.64px;
+    font-size: 28.8px;
+    line-height: 36.48px;
   }
 }
 

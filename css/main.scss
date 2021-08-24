@@ -25,7 +25,7 @@ body {
     line-height: 1.35em;
     font-size: $fontSize * map-get($typoMod, texte-1) * 1px;
     line-height: $inter-lineHeightComputed * map-get($typoMod, texte-1) * 1px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 /* Basics */
@@ -40,14 +40,77 @@ h4 {
 }
 
 h1 {
-    font-size: 2rem;
-    line-height: 4.125rem;
-    font-size: $fontSize * map-get($typoMod, titre-2) * 1px;
-    line-height: $american-lineHeightComputed * map-get($typoMod, titre-2) * 1px;
+    // font-size: 2rem;
+    // line-height: 4.125rem;
+    // font-size: $fontSize * map-get($typoMod, titre-2) * 1px;
+    // line-height: $american-lineHeightComputed * map-get($typoMod, titre-2) * 1px;
+    font-size: $fontSize * map-get($typoMod, titre-2) * map-get($typoResponsiveTitre, xs) * 1px;
+    line-height: $american-lineHeightComputed * map-get($typoMod, titre-2) * map-get($typoResponsiveTitre, xs) * 1px;
+
+    @media (min-width: map-get($breakpoints, sm)) {
+        font-size: $fontSize * map-get($typoMod, titre-2) * map-get($typoResponsiveTitre, sm) * 1px;
+        line-height: $american-lineHeightComputed * map-get($typoMod, titre-2) * map-get($typoResponsiveTitre, sm) * 1px;
+    }
+
+    @media (min-width: map-get($breakpoints, md)) {
+        font-size: $fontSize * map-get($typoMod, titre-2) * map-get($typoResponsiveTitre, md) * 1px;
+        line-height: $american-lineHeightComputed * map-get($typoMod, titre-2) * map-get($typoResponsiveTitre, md) * 1px;
+    }
+
+    @media (min-width: map-get($breakpoints, lg)) {
+        font-size: $fontSize * map-get($typoMod, titre-2) * map-get($typoResponsiveTitre, lg) * 1px;
+        line-height: $american-lineHeightComputed * map-get($typoMod, titre-2) * map-get($typoResponsiveTitre, lg) * 1px;
+    }
+}
+
+h2 {
+    font-size: $fontSize * map-get($typoMod, titre-3) * map-get($typoResponsiveTitre, xs) * 1px;
+    line-height: $american-lineHeightComputed * map-get($typoMod, titre-3) * map-get($typoResponsiveTitre, xs) * 1px;
+
+    @media (min-width: map-get($breakpoints, sm)) {
+        font-size: $fontSize * map-get($typoMod, titre-3) * map-get($typoResponsiveTitre, sm) * 1px;
+        line-height: $american-lineHeightComputed * map-get($typoMod, titre-3) * map-get($typoResponsiveTitre, sm) * 1px;
+    }
+
+    @media (min-width: map-get($breakpoints, md)) {
+        font-size: $fontSize * map-get($typoMod, titre-3) * map-get($typoResponsiveTitre, md) * 1px;
+        line-height: $american-lineHeightComputed * map-get($typoMod, titre-3) * map-get($typoResponsiveTitre, md) * 1px;
+    }
+
+    @media (min-width: map-get($breakpoints, lg)) {
+        font-size: $fontSize * map-get($typoMod, titre-3) * map-get($typoResponsiveTitre, lg) * 1px;
+        line-height: $american-lineHeightComputed * map-get($typoMod, titre-3) * map-get($typoResponsiveTitre, lg) * 1px;
+    }
 }
 
 p {
     margin: 0 0 1.5rem;
+    font-weight: 400;
+
+    font-size: $fontSize * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, xs) * 1px;
+    line-height: $american-lineHeightComputed * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, xs) * 1px;
+
+    @media (min-width: map-get($breakpoints, sm)) {
+        font-size: $fontSize * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, sm) * 1px;
+        line-height: $american-lineHeightComputed * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, sm) * 1px;
+    }
+
+    @media (min-width: map-get($breakpoints, md)) {
+        font-size: $fontSize * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, md) * 1px;
+        line-height: $american-lineHeightComputed * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, md) * 1px;
+    }
+
+    @media (min-width: map-get($breakpoints, lg)) {
+        font-size: $fontSize * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, lg) * 1px;
+        line-height: $american-lineHeightComputed * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, lg) * 1px;
+    }
+}
+
+figcaption {
+    p {
+
+        font-weight: 300;
+    }
 }
 
 
@@ -80,6 +143,7 @@ p {
         // width: 100%;
         min-width: calc(100% - 60px);
         height: calc(100% - 40px);
+
         &::after {
             content: '';
             display: block;

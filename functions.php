@@ -76,5 +76,29 @@ function lafourmie_register_assets()
         array(),
         '1.0'
     );
+
 }
 add_action('wp_enqueue_scripts', 'lafourmie_register_assets');
+
+// Ajout du SVG de l'entête de site
+register_default_headers(array(
+    'fourmi-e-logo' => array(
+        'url' => get_template_directory_uri() . '/assets/img/logo.svg',
+        'thumbnail_url' => get_template_directory_uri() . '/assets/img/logo.svg',
+        'description' => __('Kami Logo', 'fun'),
+    ),
+));
+
+function custom_header_setup()
+{
+
+    add_theme_support('custom-header', array(
+        'default-image' => get_template_directory_uri() . '/assets/img/logo.svg',
+        'width' => 330,
+        'height' => 84,
+        'header-selector' => '.site-title a',
+        'header-text' => false,
+    ));
+}
+
+add_action('after_setup_theme', 'custom_header_setup');

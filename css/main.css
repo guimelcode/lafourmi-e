@@ -21926,11 +21926,47 @@ figcaption p {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-left: 5%;
   padding-top: 10px;
   margin-bottom: 2px;
   -webkit-box-shadow: 0px 2px currentColor;
           box-shadow: 0px 2px currentColor;
+  /*h1 {
+            position: relative;
+            bottom: 0;
+            font-size: $fontSize * 3 * 1px;
+            line-height: $american-lineHeightComputed * 3 * 1px;
+            font-size: 17vw;
+            line-height: 18vw;
+            margin: 0;
+            
+            @media (min-width: map-get($breakpoints, sm)) {
+                font-size: 14vw;
+                line-height: 15vw;
+                // font-size: $fontSize * 3.5 * 1px;
+                // line-height: $american-lineHeightComputed * 3.5 * 1px;
+            }
+
+            @media (min-width: map-get($breakpoints, md)) {
+                bottom: -$american-lineHeightComputed * .35 * 1px;
+                font-size: $fontSize * 3 * 1px;
+                line-height: $american-lineHeightComputed * 3 * 1px;
+            }
+            @media (min-width: map-get($breakpoints, lg)) {
+                bottom: -$american-lineHeightComputed * .6 * 1px;
+                font-size: $fontSize * 4.5 * 1px;
+                line-height: $american-lineHeightComputed * 4.5 * 1px;
+            }
+            @media (min-width: map-get($breakpoints, xl)) {
+                bottom: -$american-lineHeightComputed * .85 * 1px;
+                font-size: $fontSize * 5.5 * 1px;
+                line-height: $american-lineHeightComputed * 5.5 * 1px;
+            }
+            @media (min-width: map-get($breakpoints, xxl)) {
+                bottom: -$american-lineHeightComputed * 1 * 1px;
+                font-size: $fontSize * 6 * 1px;
+                line-height: $american-lineHeightComputed * 6 * 1px;
+            }
+        }*/
 }
 
 @media (min-width: 768px) {
@@ -21951,53 +21987,26 @@ figcaption p {
   }
 }
 
-#main-header #site-header-home h1 {
-  position: relative;
-  bottom: 0;
-  font-size: 54px;
-  line-height: 68.4px;
-  font-size: 17vw;
-  line-height: 18vw;
-  margin: 0;
+#main-header #site-header-home > a {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
-@media (min-width: 576px) {
-  #main-header #site-header-home h1 {
-    font-size: 14vw;
-    line-height: 15vw;
-  }
+#main-header #site-header-home > a:hover {
+  background-color: #3405a1;
 }
 
-@media (min-width: 768px) {
-  #main-header #site-header-home h1 {
-    bottom: -7.98px;
-    font-size: 54px;
-    line-height: 68.4px;
-  }
+#main-header #site-header-home > a:hover img {
+  -webkit-filter: invert(100%);
+  /* safari 6.0 - 9.0 */
+  filter: invert(100%);
 }
 
-@media (min-width: 992px) {
-  #main-header #site-header-home h1 {
-    bottom: -13.68px;
-    font-size: 81px;
-    line-height: 102.6px;
-  }
-}
-
-@media (min-width: 1200px) {
-  #main-header #site-header-home h1 {
-    bottom: -19.38px;
-    font-size: 99px;
-    line-height: 125.4px;
-  }
-}
-
-@media (min-width: 1400px) {
-  #main-header #site-header-home h1 {
-    bottom: -22.8px;
-    font-size: 108px;
-    line-height: 136.8px;
-  }
+#main-header #site-header-home > a img {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 #main-header .main-nav {

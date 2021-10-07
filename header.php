@@ -9,18 +9,23 @@
 <body  <?php body_class();?> >
 
 <header id="main-header" class="segment">
-    <a href="<?php echo home_url( '/' ) ?>" id="site-header-home">
+    <!-- <a href="<?php echo home_url('/') ?>" id="site-header-home">
         <h1>la fourmi-e</h1>
-    </a>
+    </a> -->
+    <div id="site-header-home" class="site-title">
+        <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+            <img src="<?php header_image();?>" width="<?php echo absint(get_custom_header()->width); ?>" height="<?php echo absint(get_custom_header()->height); ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
+        </a>
+    </div>
     <nav class="main-nav">
 
-    <?php wp_nav_menu( 
-        array(
-            'theme_location' => 'main', 
-            'container' => 'ul', 
-            'menu_class' => 'nav-header-wrapper',
-            )
-    ); ?>
+    <?php wp_nav_menu(
+    array(
+        'theme_location' => 'main',
+        'container' => 'ul',
+        'menu_class' => 'nav-header-wrapper',
+    )
+);?>
         <button class="main-nav-button">&darr;</button>
     </nav>
 </header>

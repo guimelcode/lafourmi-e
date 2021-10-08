@@ -1,5 +1,6 @@
 /* Variables */
 
+/* Break points */ 
 $breakpoints: (xs: 0,
     sm: 576px,
     md: 768px,
@@ -7,6 +8,7 @@ $breakpoints: (xs: 0,
     xl: 1200px,
     xxl: 1400px);
 
+/* Typographies */
 $fontSize: 18;
 $inter-capHeight: 1.05;
 $american-capHeight: .95;
@@ -28,6 +30,7 @@ $typoResponsiveTitre: (xs: .65,
     md: 1,
     lg: 1.15,
 );
+
 $typoResponsiveCourant: (xs: 1,
     sm: 1.15,
     md: 1.25,
@@ -57,3 +60,7 @@ $violet-100: #670EBF;
 $violet-75: #CDA2F8;
 $violet-50: #EAD8FC;
 $violet-25: #F5ECFE;
+
+/* Marges */
+
+$grandGauche: 2%; // Changement de variable à faire sur le block Segment

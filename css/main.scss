@@ -37,6 +37,7 @@ h4 {
     font-family: 'American Typewriter', serif;
     font-weight: normal;
     margin: 0 0 .5rem 0;
+    border-bottom: 2px solid currentColor;
 }
 
 h1 {
@@ -125,11 +126,11 @@ figcaption {
 }
 
 .segment {
-    width: 96%;
+    width: calc(100% - #{$grandGauche});
     display: grid;
     grid-template-columns: repeat(24, 1fr);
     gap: 0;
-    padding-left: 4%;
+    padding-left: $grandGauche;
     align-items: end;
 
     .conteneur {

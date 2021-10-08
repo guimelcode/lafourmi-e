@@ -343,7 +343,10 @@ template {
 }
 
 /* Variables */
+/* Break points */
+/* Typographies */
 /* Colors */
+/* Marges */
 /*** BackGrounds ***/
 .bg-blanc {
   background-color: white;
@@ -21656,6 +21659,7 @@ h4 {
   font-family: 'American Typewriter', serif;
   font-weight: normal;
   margin: 0 0 .5rem 0;
+  border-bottom: 2px solid currentColor;
 }
 
 h1 {
@@ -21750,13 +21754,13 @@ figcaption p {
 }
 
 .segment {
-  width: 96%;
+  width: calc(100% - 2%);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[24];
       grid-template-columns: repeat(24, 1fr);
   gap: 0;
-  padding-left: 4%;
+  padding-left: 2%;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
@@ -22264,9 +22268,9 @@ figcaption p {
 }
 
 #main-footer {
-  width: calc(96% - 10px);
+  width: calc(100% - 2% - 10px);
   margin: 0 10px 2px 0;
-  padding: 0 0 50px 4%;
+  padding: 0 0 50px 2%;
 }
 
 #main-footer a {

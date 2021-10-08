@@ -1,22 +1,19 @@
 <?php get_header();?>
 <div id="front">
 
-	<header class="fake-header">
+	<!-- <header class="fake-header">
 		<h1>FRONT-PAGE</h1>
-	</header>
+	</header> -->
 
-	<ul class="tab-list">
-	<?php if (have_posts()): while (have_posts()): the_post()?>
-			<li class="tab-list-item">
-				<h2><?php the_title()?></h2>
-				<?php the_post_thumbnail(); /* Trouver l'image */ ?> 
-				<p class="post-meta"> |  <?php the_time(get_option('date_format'));?></p>
-				<p>
-					<a href="<?php the_permalink();?>" class="post__link">Lire la suite</a>
-				</p>
-			</li>
-	<?php endwhile;endif;?>
-	</ul>
+	<section class="from-page">
+	<?php
+		wp_reset_query(); // necessary to reset query
+		while ( have_posts() ) : the_post();
+			the_content();
+		endwhile; // End of the loop.
+	?>
+	</section>
+
 </div>
 
 <?php get_footer();?>

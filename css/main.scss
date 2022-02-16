@@ -41,10 +41,26 @@ h4 {
 }
 
 h1 {
-    // font-size: 2rem;
-    // line-height: 4.125rem;
-    // font-size: $fontSize * map-get($typoMod, titre-2) * 1px;
-    // line-height: $american-lineHeightComputed * map-get($typoMod, titre-2) * 1px;
+    font-size: $fontSize * map-get($typoMod, titre-1) * map-get($typoResponsiveTitre, xs) * 1px;
+    line-height: $american-lineHeightComputed * map-get($typoMod, titre-1) * map-get($typoResponsiveTitre, xs) * 1px;
+
+    @media (min-width: map-get($breakpoints, sm)) {
+        font-size: $fontSize * map-get($typoMod, titre-1) * map-get($typoResponsiveTitre, sm) * 1px;
+        line-height: $american-lineHeightComputed * map-get($typoMod, titre-1) * map-get($typoResponsiveTitre, sm) * 1px;
+    }
+
+    @media (min-width: map-get($breakpoints, md)) {
+        font-size: $fontSize * map-get($typoMod, titre-1) * map-get($typoResponsiveTitre, md) * 1px;
+        line-height: $american-lineHeightComputed * map-get($typoMod, titre-1) * map-get($typoResponsiveTitre, md) * 1px;
+    }
+
+    @media (min-width: map-get($breakpoints, lg)) {
+        font-size: $fontSize * map-get($typoMod, titre-1) * map-get($typoResponsiveTitre, lg) * 1px;
+        line-height: $american-lineHeightComputed * map-get($typoMod, titre-1) * map-get($typoResponsiveTitre, lg) * 1px;
+    }
+}
+
+h2 {
     font-size: $fontSize * map-get($typoMod, titre-2) * map-get($typoResponsiveTitre, xs) * 1px;
     line-height: $american-lineHeightComputed * map-get($typoMod, titre-2) * map-get($typoResponsiveTitre, xs) * 1px;
 
@@ -64,7 +80,7 @@ h1 {
     }
 }
 
-h2 {
+h3 {
     font-size: $fontSize * map-get($typoMod, titre-3) * map-get($typoResponsiveTitre, xs) * 1px;
     line-height: $american-lineHeightComputed * map-get($typoMod, titre-3) * map-get($typoResponsiveTitre, xs) * 1px;
 
@@ -84,27 +100,52 @@ h2 {
     }
 }
 
+h4 {
+    font-size: $fontSize * map-get($typoMod, titre-4) * map-get($typoResponsiveTitre, xs) * 1px;
+    line-height: $american-lineHeightComputed * map-get($typoMod, titre-4) * map-get($typoResponsiveTitre, xs) * 1px;
+
+    @media (min-width: map-get($breakpoints, sm)) {
+        font-size: $fontSize * map-get($typoMod, titre-4) * map-get($typoResponsiveTitre, sm) * 1px;
+        line-height: $american-lineHeightComputed * map-get($typoMod, titre-4) * map-get($typoResponsiveTitre, sm) * 1px;
+    }
+
+    @media (min-width: map-get($breakpoints, md)) {
+        font-size: $fontSize * map-get($typoMod, titre-4) * map-get($typoResponsiveTitre, md) * 1px;
+        line-height: $american-lineHeightComputed * map-get($typoMod, titre-4) * map-get($typoResponsiveTitre, md) * 1px;
+    }
+
+    @media (min-width: map-get($breakpoints, lg)) {
+        font-size: $fontSize * map-get($typoMod, titre-4) * map-get($typoResponsiveTitre, lg) * 1px;
+        line-height: $american-lineHeightComputed * map-get($typoMod, titre-4) * map-get($typoResponsiveTitre, lg) * 1px;
+    }
+}
+
 p {
     margin: 0 0 1.5rem;
     font-weight: 400;
 
     font-size: $fontSize * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, xs) * 1px;
-    line-height: $american-lineHeightComputed * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, xs) * 1px;
+    line-height: $inter-lineHeightComputed * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, xs) * 1px;
 
     @media (min-width: map-get($breakpoints, sm)) {
         font-size: $fontSize * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, sm) * 1px;
-        line-height: $american-lineHeightComputed * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, sm) * 1px;
+        line-height: $inter-lineHeightComputed * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, sm) * 1px;
     }
 
     @media (min-width: map-get($breakpoints, md)) {
         font-size: $fontSize * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, md) * 1px;
-        line-height: $american-lineHeightComputed * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, md) * 1px;
+        line-height: $inter-lineHeightComputed * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, md) * 1px;
     }
 
     @media (min-width: map-get($breakpoints, lg)) {
         font-size: $fontSize * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, lg) * 1px;
-        line-height: $american-lineHeightComputed * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, lg) * 1px;
+        line-height: $inter-lineHeightComputed * map-get($typoMod, texte-1) * map-get($typoResponsiveCourant, lg) * 1px;
     }
+}
+
+b,
+strong {
+    font-weight: 700;
 }
 
 figcaption {
@@ -114,6 +155,20 @@ figcaption {
     }
 }
 
+/* Links */
+
+a {
+    color: adjust-color($indigo-base, $saturation: 10, $lightness: 15);
+    text-decoration: none;
+    transition: color .33s ease;
+
+    // font-style: italic;
+
+    &:hover {
+        color: adjust-color($turquoise-base, $saturation: -5, $lightness: -20);
+
+    }
+}
 
 /**********/
 
@@ -126,11 +181,12 @@ figcaption {
 }
 
 .segment {
-    width: calc(100% - #{$grandGauche});
+    @include manageWidthContent;
+    // width: calc(100% - #{$grandGauche});
     display: grid;
     grid-template-columns: repeat(24, 1fr);
     gap: 0;
-    padding-left: $grandGauche;
+    // padding-left: $grandGauche;
     align-items: end;
 
     .conteneur {
@@ -143,20 +199,28 @@ figcaption {
         align-self: flex-start;
         // width: 100%;
         min-width: calc(100% - 60px);
-        height: calc(100% - 40px);
+        // height: calc(100% - 40px);
 
-        &::after {
-            content: '';
-            display: block;
-            background-color: rgba(255, 255, 255, 0.33);
-            height: 100%;
-            width: auto;
-            margin: 0 -40px -20px -20px;
+
+
+        &>* {
+            min-height: max-content;
+            margin-bottom: 5px;
+            padding-bottom: 5px;
         }
+
+        // &::after {
+        //     content: '';
+        //     display: block;
+        //     background-color: rgba(255, 255, 255, 0.33);
+        //     height: 100%;
+        //     width: auto;
+        //     margin: 0 -40px -20px -20px;
+        // }
     }
 }
 
-@import './single';
+@import './_single';
 @import './_header';
 @import './_footer';
 

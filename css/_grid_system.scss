@@ -35,6 +35,9 @@
             .col#{$infix}-#{$i} {
                 grid-column: span #{$i};
             }
+            .row#{$infix}-#{$i} {
+                grid-row: span #{$i};
+            }
             @for $j from 1 through 23 {
                 @if($j < 24 ) {
     

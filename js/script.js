@@ -1,14 +1,40 @@
 const $ = jQuery;
 
 $(document).ready(function () {
-  $("body").overlayScrollbars({
-    className: "os-theme-fourmi-e",
-    scrollbars: { visibility: "visible" },
-  });
-  $(".scroll-wrap ").overlayScrollbars({
-    className: "os-theme-fourmi-e",
-    scrollbars: { visibility: "visible" },
-  });
+  let bodyInstance = $("body")
+    .overlayScrollbars({
+      className: "os-theme-fourmi-e",
+      scrollbars: { visibility: "visible" },
+    })
+    .overlayScrollbars();
+
+  let wrapInstance = $(".scroll-wrap ")
+    .overlayScrollbars({
+      className: "os-theme-fourmi-e",
+      scrollbars: { visibility: "visible" },
+    })
+    .overlayScrollbars();
+
+  window.onbeforeprint = function () {
+    bodyInstance.destroy();
+    wrapInstance.destroy();
+  };
+
+  window.onafterprint = function () {
+    let bodyInstance = $("body")
+      .overlayScrollbars({
+        className: "os-theme-fourmi-e",
+        scrollbars: { visibility: "visible" },
+      })
+      .overlayScrollbars();
+    let wrapInstance = $(".scroll-wrap ")
+      .overlayScrollbars({
+        className: "os-theme-fourmi-e",
+        scrollbars: { visibility: "visible" },
+      })
+      .overlayScrollbars();
+  };
+
   /*
   const archiveSection = $(".archive-section");
   const rows = $(archiveSection[0]).find(".archive-table tr");
@@ -54,7 +80,7 @@ $(document).ready(function () {
       mouseenter: function () {
         theRow = $(this);
         imgFromID = imgs.find("[data-id='" + theRow.attr("data-id") + "']");
-        imgFromID.fadeIn({duration: 800, ease: 'ease-in'})
+        imgFromID.fadeIn({ duration: 800, ease: "ease-in" });
       },
       mousemove: function (e) {
         imgFromID.css({
@@ -66,30 +92,27 @@ $(document).ready(function () {
         });
       },
       mouseleave: function () {
-        imgFromID.fadeOut({duration: 200, ease: 'ease-out'}).css({top: 0})
+        imgFromID.fadeOut({ duration: 200, ease: "ease-out" }).css({ top: 0 });
       },
     });
   };
 
   $.each($(".archive-section"), (i, el) => archiveBehavior($(el)));
 
+  const menu = $(".main-nav .nav-header-wrapper");
+  const buttonMenu = $(".main-nav-button");
 
-  const menu = $('.main-nav .nav-header-wrapper')
-  const buttonMenu = $('.main-nav-button')
-
-  buttonMenu.on('click', function() {
+  buttonMenu.on("click", function () {
     // console.log(menu.hasClass('is-open'));
-    menu.toggleClass('is-open')
-    if(menu.hasClass('is-open')) {
+    menu.toggleClass("is-open");
+    if (menu.hasClass("is-open")) {
       setTimeout(() => {
-        
-        buttonMenu.html('&uarr;')
+        buttonMenu.html("&uarr;");
       }, 500);
     } else {
       setTimeout(() => {
-        buttonMenu.html('&darr;')
-        
+        buttonMenu.html("&darr;");
       }, 500);
     }
-  })
+  });
 });

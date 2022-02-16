@@ -1,6 +1,6 @@
 /* Variables */
 
-/* Break points */ 
+/* Break points */
 $breakpoints: (xs: 0,
     sm: 576px,
     md: 768px,
@@ -9,32 +9,32 @@ $breakpoints: (xs: 0,
     xxl: 1400px);
 
 /* Typographies */
-$fontSize: 18;
+$fontSize: 16;
 $inter-capHeight: 1.05;
 $american-capHeight: .95;
-$lineHeight: 24;
+$lineHeight: 18;
 $inter-lineHeightComputed: ($lineHeight * $inter-capHeight);
 $american-lineHeightComputed: ($lineHeight * $american-capHeight);
 
-$typoMod: (titre-1: 4,
+$typoMod: (titre-1: 3.8,
     titre-2: 3,
-    titre-3: 2,
-    titre-4: 1.75,
-    texte-1: .9,
-    texte-2: 1,
+    titre-3: 2.4,
+    titre-4: 1.8,
+    texte-1: 1,
+    texte-2: 1.25,
     wideScreen: 1.15,
 );
 
-$typoResponsiveTitre: (xs: .65,
-    sm: .75,
+$typoResponsiveTitre: (xs: .85,
+    sm: .958,
     md: 1,
-    lg: 1.15,
+    lg: 1.05,
 );
 
-$typoResponsiveCourant: (xs: 1,
-    sm: 1.15,
-    md: 1.25,
-    lg: 1.3,
+$typoResponsiveCourant: (xs: 1.1,
+    sm: 1.05,
+    md: 1,
+    lg: 1.05,
 );
 
 /* Colors */
@@ -44,6 +44,8 @@ $noir-100: black;
 $noir-75: #9C9C9C;
 $noir-50: #D0D0D0;
 $noir-25: #EDEDED;
+
+/* ANCIENNES COULEURS */
 $rouge-100: #9A2525;
 $rouge-75: #F56969;
 $rouge-50: #F89898;
@@ -61,6 +63,105 @@ $violet-75: #CDA2F8;
 $violet-50: #EAD8FC;
 $violet-25: #F5ECFE;
 
+/* Nouvelles couleurs */
+
+/* TURQUOISE */
+$turquoise-base: #2BE7B4;
+$turquoise-highlight: #7CFEDA;
+$turquoise-light: #EFFDF9;
+$turquoise-dark: #004C37;
+$turquoise-darker: #022C20;
+
+/* INDIGO */
+$indigo-base: #5025ED;
+$indigo-highlight: #C4B3FF;
+$indigo-light: #F1EEFE;
+// $indigo-dark: #2C1A72;
+$indigo-dark: #2e1496;
+$indigo-darker: #130D2E;
+
+/* CORAIL */
+$corail-base: #FF4A22;
+$corail-highlight: #FF957C;
+$corail-light: #FFF1EE;
+$corail-dark: #8D1A02;
+$corail-darker: #3D1008;
+
+/* ScrollBar variables générales */
+
 /* Marges */
 
 $grandGauche: 2%; // Changement de variable à faire sur le block Segment
+
+/* Marges de segment */
+$contentPadding: (baseLeft: 4%,
+    baseRight: 0%,
+    mediumLeft: 2%,
+    mediumRight: 0%,
+    extralargeLeft: 4%,
+    extralargeRight: 2%,
+    doubleextralargeLeft: 5%,
+    doubleextralargeRight: 3%,
+    superlargeLeft: 10%,
+    superlargeRight: 5%,
+);
+
+@mixin manageWidthContent {
+    width: calc(100% - #{map-get($contentPadding, baseLeft)} - #{map-get($contentPadding, baseRight)});
+    padding-left: map-get($contentPadding, baseLeft);
+    padding-right: map-get($contentPadding, baseRight);
+
+    @media (min-width: map-get($breakpoints, md)) {
+        width: calc(100% - #{map-get($contentPadding, mediumLeft)} - #{map-get($contentPadding, mediumRight)});
+        padding-left: map-get($contentPadding, mediumLeft);
+        padding-right: map-get($contentPadding, mediumRight);
+    }
+
+    @media (min-width: map-get($breakpoints, xl)) {
+        width: calc(100% - #{map-get($contentPadding, extralargeLeft)} - #{map-get($contentPadding, extralargeRight)});
+        padding-left: map-get($contentPadding, extralargeLeft);
+        padding-right: map-get($contentPadding, extralargeRight);
+    }
+
+    @media (min-width: map-get($breakpoints, xxl)) {
+        width: calc(100% - #{map-get($contentPadding, doubleextralargeLeft)} - #{map-get($contentPadding, doubleextralargeRight)});
+        padding-left: map-get($contentPadding, doubleextralargeLeft);
+        padding-right: map-get($contentPadding, doubleextralargeRight);
+    }
+
+    @media (min-width: "2100px") {
+        width: calc(100% - #{map-get($contentPadding, superlargeLeft)} - #{map-get($contentPadding, superlargeRight)});
+        padding-left: map-get($contentPadding, superlargeLeft);
+        padding-right: map-get($contentPadding, superlargeRight);
+    }
+}
+
+@mixin manageWidthContentInnerSegment {
+    width: calc(100% - #{map-get($contentPadding, baseLeft) / 2} - #{map-get($contentPadding, baseRight)});
+    padding-left: map-get($contentPadding, baseLeft) / 2;
+    padding-right: map-get($contentPadding, baseRight);
+
+    @media (min-width: map-get($breakpoints, md)) {
+        width: calc(100% - #{map-get($contentPadding, mediumLeft) / 2} - #{map-get($contentPadding, mediumRight)});
+        padding-left: map-get($contentPadding, mediumLeft) / 2;
+        padding-right: map-get($contentPadding, mediumRight);
+    }
+
+    @media (min-width: map-get($breakpoints, xl)) {
+        width: calc(100% - #{map-get($contentPadding, extralargeLeft) / 2} - #{map-get($contentPadding, extralargeRight)});
+        padding-left: map-get($contentPadding, extralargeLeft) / 2;
+        padding-right: map-get($contentPadding, extralargeRight);
+    }
+
+    @media (min-width: map-get($breakpoints, xxl)) {
+        width: calc(100% - #{map-get($contentPadding, doubleextralargeLeft)/ 2} - #{map-get($contentPadding, doubleextralargeRight)});
+        padding-left: map-get($contentPadding, doubleextralargeLeft)/ 2;
+        padding-right: map-get($contentPadding, doubleextralargeRight);
+    }
+
+    @media (min-width: "2100px") {
+        width: calc(100% - #{map-get($contentPadding, superlargeLeft)/ 2} - #{map-get($contentPadding, superlargeRight)});
+        padding-left: map-get($contentPadding, superlargeLeft)/ 2;
+        padding-right: map-get($contentPadding, superlargeRight);
+    }
+}

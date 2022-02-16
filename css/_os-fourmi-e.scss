@@ -39,7 +39,8 @@ $scrollbar-vertical-handle-transition: background-color 0.3s;
 $scrollbar-corner-background-color: transparent;
 
 .#{$theme-name}>.os-scrollbar-horizontal {
-    right: $scrollbar-vertical-size + ($scrollbar-vertical-padding * 2);
+    // right: $scrollbar-vertical-size + ($scrollbar-vertical-padding * 2);
+    right: 0;
     height: $scrollbar-horizontal-size;
     padding: $scrollbar-horizontal-padding;
 }

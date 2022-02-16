@@ -1,78 +1,177 @@
+@mixin metaFontsize {
+    font-size: $fontSize * map-get($typoMod, titre-4) * map-get($typoResponsiveTitre, xs) * .75px;
+    line-height: $american-lineHeightComputed * map-get($typoMod, titre-4) * map-get($typoResponsiveTitre, xs) * .75px;
+
+    @media (min-width: map-get($breakpoints, sm)) {
+        font-size: $fontSize * map-get($typoMod, titre-4) * map-get($typoResponsiveTitre, sm) * .75px;
+        line-height: $american-lineHeightComputed * map-get($typoMod, titre-4) * map-get($typoResponsiveTitre, sm) * .75px;
+    }
+
+    @media (min-width: map-get($breakpoints, md)) {
+        font-size: $fontSize * map-get($typoMod, titre-4) * map-get($typoResponsiveTitre, md) * .75px;
+        line-height: $american-lineHeightComputed * map-get($typoMod, titre-4) * map-get($typoResponsiveTitre, md) * .75px;
+    }
+
+    @media (min-width: map-get($breakpoints, lg)) {
+        font-size: $fontSize * map-get($typoMod, titre-4) * map-get($typoResponsiveTitre, lg) * .75px;
+        line-height: $american-lineHeightComputed * map-get($typoMod, titre-4) * map-get($typoResponsiveTitre, lg) * .75px;
+    }
+}
+
 #single {
     .post {
         &-header {
-            
-
-            grid-template-rows: min-content min-content min-content;
+            // background-color: rgba($color: #000000, $alpha: .25);
+            width: calc(100% - #{$grandGauche});
+            padding-left: $grandGauche;
+            position: relative;
+            // display: grid;
+            // grid-template-rows: min-content min-content;
+            // height: 38rem;
 
             &-image {
-                grid-column: 1/25;
-                grid-row: 1/4;
+                margin: 0 0 0 #{-$grandGauche};
+                // position: relative;
+                display: block;
+                min-width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: -10;
+                // height: 100%;
+                // grid-column: 1/25;
+                // grid-row: 1/4;
                 // min-height: 40vh;
-                height: 400px;
-                @media (min-width: map-get($breakpoints, md)){
-                    grid-row: 1/3;
+                // height: 400px;
+                // height: 20rem;
+
+                // grid-column: 1/2;
+                // grid-row: 1/3;
+
+                @media (min-width: map-get($breakpoints, md)) {
+                    // grid-row: 1/3;
                 }
+
                 img {
                     display: block;
                     width: 100%;
-                    height: inherit;
+                    // max-height: 55vh;
+                    height: 100%;
                     object-fit: cover;
+                    object-position: top;
+
+                    // min-height: 340px;
+
+                    @media (min-width: map-get($breakpoints, md)) {
+                        // min-height: 380px;
+                    }
+
+                    @media (min-width: map-get($breakpoints, xl)) {
+                        // min-height: 420px;
+                    }
                 }
+            }
+
+            .conteneurs-wrap {
+                position: relative;
+                z-index: 10;
+                padding-top: 5rem;
+                // bottom: 0;
+                // right: 0;
+                // position: absolute;
+                // right: 0;
+                // bottom: 0;
+                @include manageWidthContentInnerSegment;
+                display: grid;
+                grid-template-columns: repeat(24, 1fr);
+                gap: 0;
+                // padding-top: 5rem;
+                // grid-column: 1/2;
+                // grid-row: 2/3;
             }
 
             &-title {
 
-                font-size: $fontSize * map-get($typoMod, titre-1) * .75 * 1px;
-                line-height: $american-lineHeightComputed * map-get($typoMod, titre-1) * .75 * 1px;
-                text-align: end;
-                display: block;
-                height: fit-content;
-                padding: 20px 40px 20px 20px;
-                // padding: 15px 30px 15px 15px;
-                margin: 0;
-                // background-color: aquamarine;
 
-                grid-column: 1/25;
-                grid-row: 2/3;
+                // grid-column: 1/25;
+                // grid-row: 2/3;
 
                 @media (min-width: map-get($breakpoints, md)) {
-                    font-size: $fontSize * map-get($typoMod, titre-1) * 1px;
-                    line-height: $american-lineHeightComputed * map-get($typoMod, titre-1) * 1px;
-                    grid-column: 6/19;
-                    grid-row: 2/3;
+                    // font-size: $fontSize * map-get($typoMod, titre-1) * 1px;
+                    // line-height: $american-lineHeightComputed * map-get($typoMod, titre-1) * 1px;
+                    // grid-column: 6/19;
+                    // grid-row: 2/3;
                 }
             }
 
             &-meta {
-                font-family: 'American Typewriter', serif;
-                font-weight: normal;
-                font-size: $fontSize * map-get($typoMod, titre-4)  * .75 * 1px;
-                line-height: $american-lineHeightComputed * map-get($typoMod, titre-4)  * .75 * 1px;
+                // font-family: 'American Typewriter', serif;
+                // font-weight: normal;
+                // font-size: $fontSize * map-get($typoMod, titre-4) * .75 * 1px;
+                // line-height: $american-lineHeightComputed * map-get($typoMod, titre-4) * .75 * 1px;
 
-                display: block;
-                height: fit-content;
-                padding: 20px 40px 20px 20px;
-                margin: 0;
-                // background-color: rgb(187, 70, 255);
-                grid-column: 11/25;
-                grid-row: 3/4;
+                // display: block;
+                // height: fit-content;
+                // padding: 20px 40px 20px 20px;
+                // margin: 0;
+                // // background-color: rgb(187, 70, 255);
+                // grid-column: 11/25;
+                // grid-row: 3/4;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+                width: fit-content;
+                margin: 0 0 0 auto;
 
                 @media (min-width: map-get($breakpoints, md)) {
-                    font-size: $fontSize * map-get($typoMod, titre-4) * 1px;
-                    line-height: $american-lineHeightComputed * map-get($typoMod, titre-4) * 1px;
-                    grid-column: 19/25;
-                    grid-row: 2/3;
+                    // font-size: $fontSize * map-get($typoMod, titre-4) * 1px;
+                    // line-height: $american-lineHeightComputed * map-get($typoMod, titre-4) * 1px;
+                    // grid-column: 19/25;
+                    // grid-row: 2/3;
                 }
 
-                ul {
+                .meta-date {
+                    height: fit-content;
+                    grid-column: 1/6;
+
+                    @media (min-width: map-get($breakpoints, md)) {
+                        grid-column: 1/3;
+
+                    }
+
+                    @include metaFontsize;
+                }
+
+                .meta-tags {
                     margin: 0;
                     list-style: none;
                     padding: 0;
+                    display: flex;
+                    flex-direction: row;
+                    // justify-content: flex-end;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    gap: 0 1rem;
+                    grid-column: 1/7;
+
+                    h4 {
+                        border: none;
+                        font-size: .75em;
+                        @include metaFontsize;
+
+                    }
+
+                    @media (min-width: map-get($breakpoints, md)) {
+                        grid-column: 3/7;
+
+                    }
+
+
                 }
+
+
             }
         }
 
-        &-content {}
+
     }
 }

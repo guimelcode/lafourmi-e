@@ -13,3 +13,9 @@ h4 {
     margin: 0 0 .5rem 0;
     border-bottom: 2px solid currentColor;
 }
+
+.block-editor-block-list__block.wp-block.is-reusable {
+    margin: 0;
+    width: 100%;
+    max-width: initial;
+}

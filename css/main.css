@@ -346,7 +346,14 @@ template {
 /* Break points */
 /* Typographies */
 /* Colors */
+/* ANCIENNES COULEURS */
+/* Nouvelles couleurs */
+/* TURQUOISE */
+/* INDIGO */
+/* CORAIL */
+/* ScrollBar variables générales */
 /* Marges */
+/* Marges de segment */
 /*** BackGrounds ***/
 .bg-blanc {
   background-color: white;
@@ -373,6 +380,7 @@ template {
   color: black;
 }
 
+/* Anciennes couleurs */
 .bg-rouge-100 {
   background-color: #9A2525;
   color: white;
@@ -453,11 +461,90 @@ template {
   color: black;
 }
 
+/* ----- */
+/* Turquoise */
+.bg-turquoise-base {
+  background-color: #2BE7B4;
+  color: black;
+}
+
+.bg-turquoise-highlight {
+  background-color: #7CFEDA;
+  color: black;
+}
+
+.bg-turquoise-light {
+  background-color: #EFFDF9;
+  color: black;
+}
+
+.bg-turquoise-dark {
+  background-color: #004C37;
+  color: white;
+}
+
+.bg-turquoise-darker {
+  background-color: #022C20;
+  color: white;
+}
+
+/* Indigo */
+.bg-indigo-base {
+  background-color: #5025ED;
+  color: white;
+}
+
+.bg-indigo-highlight {
+  background-color: #C4B3FF;
+  color: black;
+}
+
+.bg-indigo-light {
+  background-color: #F1EEFE;
+  color: black;
+}
+
+.bg-indigo-dark {
+  background-color: #2e1496;
+  color: white;
+}
+
+.bg-indigo-darker {
+  background-color: #130D2E;
+  color: white;
+}
+
+/* Corail */
+.bg-corail-base {
+  background-color: #FF4A22;
+  color: black;
+}
+
+.bg-corail-highlight {
+  background-color: #FF957C;
+  color: black;
+}
+
+.bg-corail-light {
+  background-color: #FFF1EE;
+  color: black;
+}
+
+.bg-corail-dark {
+  background-color: #8D1A02;
+  color: white;
+}
+
+.bg-corail-darker {
+  background-color: #3D1008;
+  color: white;
+}
+
 /*
 Thème pour Overlay ScrollBar 
 */
 .os-theme-fourmi-e > .os-scrollbar-horizontal {
-  right: 10px;
+  right: 0;
   height: 10px;
   padding: 0;
 }
@@ -738,6 +825,10 @@ Thème pour Overlay ScrollBar
   grid-column: span 1;
 }
 
+.row-1 {
+  grid-row: span 1;
+}
+
 .col-1-start-1 {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -901,6 +992,10 @@ Thème pour Overlay ScrollBar
 
 .col-2 {
   grid-column: span 2;
+}
+
+.row-2 {
+  grid-row: span 2;
 }
 
 .col-2-start-1 {
@@ -1068,6 +1163,10 @@ Thème pour Overlay ScrollBar
   grid-column: span 3;
 }
 
+.row-3 {
+  grid-row: span 3;
+}
+
 .col-3-start-1 {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -1231,6 +1330,10 @@ Thème pour Overlay ScrollBar
 
 .col-4 {
   grid-column: span 4;
+}
+
+.row-4 {
+  grid-row: span 4;
 }
 
 .col-4-start-1 {
@@ -1398,6 +1501,10 @@ Thème pour Overlay ScrollBar
   grid-column: span 5;
 }
 
+.row-5 {
+  grid-row: span 5;
+}
+
 .col-5-start-1 {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -1561,6 +1668,10 @@ Thème pour Overlay ScrollBar
 
 .col-6 {
   grid-column: span 6;
+}
+
+.row-6 {
+  grid-row: span 6;
 }
 
 .col-6-start-1 {
@@ -1728,6 +1839,10 @@ Thème pour Overlay ScrollBar
   grid-column: span 7;
 }
 
+.row-7 {
+  grid-row: span 7;
+}
+
 .col-7-start-1 {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -1891,6 +2006,10 @@ Thème pour Overlay ScrollBar
 
 .col-8 {
   grid-column: span 8;
+}
+
+.row-8 {
+  grid-row: span 8;
 }
 
 .col-8-start-1 {
@@ -2058,6 +2177,10 @@ Thème pour Overlay ScrollBar
   grid-column: span 9;
 }
 
+.row-9 {
+  grid-row: span 9;
+}
+
 .col-9-start-1 {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -2221,6 +2344,10 @@ Thème pour Overlay ScrollBar
 
 .col-10 {
   grid-column: span 10;
+}
+
+.row-10 {
+  grid-row: span 10;
 }
 
 .col-10-start-1 {
@@ -2388,6 +2515,10 @@ Thème pour Overlay ScrollBar
   grid-column: span 11;
 }
 
+.row-11 {
+  grid-row: span 11;
+}
+
 .col-11-start-1 {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -2551,6 +2682,10 @@ Thème pour Overlay ScrollBar
 
 .col-12 {
   grid-column: span 12;
+}
+
+.row-12 {
+  grid-row: span 12;
 }
 
 .col-12-start-1 {
@@ -2718,6 +2853,10 @@ Thème pour Overlay ScrollBar
   grid-column: span 13;
 }
 
+.row-13 {
+  grid-row: span 13;
+}
+
 .col-13-start-1 {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -2881,6 +3020,10 @@ Thème pour Overlay ScrollBar
 
 .col-14 {
   grid-column: span 14;
+}
+
+.row-14 {
+  grid-row: span 14;
 }
 
 .col-14-start-1 {
@@ -3048,6 +3191,10 @@ Thème pour Overlay ScrollBar
   grid-column: span 15;
 }
 
+.row-15 {
+  grid-row: span 15;
+}
+
 .col-15-start-1 {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -3211,6 +3358,10 @@ Thème pour Overlay ScrollBar
 
 .col-16 {
   grid-column: span 16;
+}
+
+.row-16 {
+  grid-row: span 16;
 }
 
 .col-16-start-1 {
@@ -3378,6 +3529,10 @@ Thème pour Overlay ScrollBar
   grid-column: span 17;
 }
 
+.row-17 {
+  grid-row: span 17;
+}
+
 .col-17-start-1 {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -3541,6 +3696,10 @@ Thème pour Overlay ScrollBar
 
 .col-18 {
   grid-column: span 18;
+}
+
+.row-18 {
+  grid-row: span 18;
 }
 
 .col-18-start-1 {
@@ -3708,6 +3867,10 @@ Thème pour Overlay ScrollBar
   grid-column: span 19;
 }
 
+.row-19 {
+  grid-row: span 19;
+}
+
 .col-19-start-1 {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -3871,6 +4034,10 @@ Thème pour Overlay ScrollBar
 
 .col-20 {
   grid-column: span 20;
+}
+
+.row-20 {
+  grid-row: span 20;
 }
 
 .col-20-start-1 {
@@ -4038,6 +4205,10 @@ Thème pour Overlay ScrollBar
   grid-column: span 21;
 }
 
+.row-21 {
+  grid-row: span 21;
+}
+
 .col-21-start-1 {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -4201,6 +4372,10 @@ Thème pour Overlay ScrollBar
 
 .col-22 {
   grid-column: span 22;
+}
+
+.row-22 {
+  grid-row: span 22;
 }
 
 .col-22-start-1 {
@@ -4368,6 +4543,10 @@ Thème pour Overlay ScrollBar
   grid-column: span 23;
 }
 
+.row-23 {
+  grid-row: span 23;
+}
+
 .col-23-start-1 {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -4531,6 +4710,10 @@ Thème pour Overlay ScrollBar
 
 .col-24 {
   grid-column: span 24;
+}
+
+.row-24 {
+  grid-row: span 24;
 }
 
 .col-24-start-1 {
@@ -4698,6 +4881,9 @@ Thème pour Overlay ScrollBar
   .col-sm-1 {
     grid-column: span 1;
   }
+  .row-sm-1 {
+    grid-row: span 1;
+  }
   .col-sm-1-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -4838,6 +5024,9 @@ Thème pour Overlay ScrollBar
   }
   .col-sm-2 {
     grid-column: span 2;
+  }
+  .row-sm-2 {
+    grid-row: span 2;
   }
   .col-sm-2-start-1 {
     -ms-grid-column: 1;
@@ -4980,6 +5169,9 @@ Thème pour Overlay ScrollBar
   .col-sm-3 {
     grid-column: span 3;
   }
+  .row-sm-3 {
+    grid-row: span 3;
+  }
   .col-sm-3-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -5120,6 +5312,9 @@ Thème pour Overlay ScrollBar
   }
   .col-sm-4 {
     grid-column: span 4;
+  }
+  .row-sm-4 {
+    grid-row: span 4;
   }
   .col-sm-4-start-1 {
     -ms-grid-column: 1;
@@ -5262,6 +5457,9 @@ Thème pour Overlay ScrollBar
   .col-sm-5 {
     grid-column: span 5;
   }
+  .row-sm-5 {
+    grid-row: span 5;
+  }
   .col-sm-5-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -5402,6 +5600,9 @@ Thème pour Overlay ScrollBar
   }
   .col-sm-6 {
     grid-column: span 6;
+  }
+  .row-sm-6 {
+    grid-row: span 6;
   }
   .col-sm-6-start-1 {
     -ms-grid-column: 1;
@@ -5544,6 +5745,9 @@ Thème pour Overlay ScrollBar
   .col-sm-7 {
     grid-column: span 7;
   }
+  .row-sm-7 {
+    grid-row: span 7;
+  }
   .col-sm-7-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -5684,6 +5888,9 @@ Thème pour Overlay ScrollBar
   }
   .col-sm-8 {
     grid-column: span 8;
+  }
+  .row-sm-8 {
+    grid-row: span 8;
   }
   .col-sm-8-start-1 {
     -ms-grid-column: 1;
@@ -5826,6 +6033,9 @@ Thème pour Overlay ScrollBar
   .col-sm-9 {
     grid-column: span 9;
   }
+  .row-sm-9 {
+    grid-row: span 9;
+  }
   .col-sm-9-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -5966,6 +6176,9 @@ Thème pour Overlay ScrollBar
   }
   .col-sm-10 {
     grid-column: span 10;
+  }
+  .row-sm-10 {
+    grid-row: span 10;
   }
   .col-sm-10-start-1 {
     -ms-grid-column: 1;
@@ -6108,6 +6321,9 @@ Thème pour Overlay ScrollBar
   .col-sm-11 {
     grid-column: span 11;
   }
+  .row-sm-11 {
+    grid-row: span 11;
+  }
   .col-sm-11-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -6248,6 +6464,9 @@ Thème pour Overlay ScrollBar
   }
   .col-sm-12 {
     grid-column: span 12;
+  }
+  .row-sm-12 {
+    grid-row: span 12;
   }
   .col-sm-12-start-1 {
     -ms-grid-column: 1;
@@ -6390,6 +6609,9 @@ Thème pour Overlay ScrollBar
   .col-sm-13 {
     grid-column: span 13;
   }
+  .row-sm-13 {
+    grid-row: span 13;
+  }
   .col-sm-13-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -6530,6 +6752,9 @@ Thème pour Overlay ScrollBar
   }
   .col-sm-14 {
     grid-column: span 14;
+  }
+  .row-sm-14 {
+    grid-row: span 14;
   }
   .col-sm-14-start-1 {
     -ms-grid-column: 1;
@@ -6672,6 +6897,9 @@ Thème pour Overlay ScrollBar
   .col-sm-15 {
     grid-column: span 15;
   }
+  .row-sm-15 {
+    grid-row: span 15;
+  }
   .col-sm-15-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -6812,6 +7040,9 @@ Thème pour Overlay ScrollBar
   }
   .col-sm-16 {
     grid-column: span 16;
+  }
+  .row-sm-16 {
+    grid-row: span 16;
   }
   .col-sm-16-start-1 {
     -ms-grid-column: 1;
@@ -6954,6 +7185,9 @@ Thème pour Overlay ScrollBar
   .col-sm-17 {
     grid-column: span 17;
   }
+  .row-sm-17 {
+    grid-row: span 17;
+  }
   .col-sm-17-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -7094,6 +7328,9 @@ Thème pour Overlay ScrollBar
   }
   .col-sm-18 {
     grid-column: span 18;
+  }
+  .row-sm-18 {
+    grid-row: span 18;
   }
   .col-sm-18-start-1 {
     -ms-grid-column: 1;
@@ -7236,6 +7473,9 @@ Thème pour Overlay ScrollBar
   .col-sm-19 {
     grid-column: span 19;
   }
+  .row-sm-19 {
+    grid-row: span 19;
+  }
   .col-sm-19-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -7376,6 +7616,9 @@ Thème pour Overlay ScrollBar
   }
   .col-sm-20 {
     grid-column: span 20;
+  }
+  .row-sm-20 {
+    grid-row: span 20;
   }
   .col-sm-20-start-1 {
     -ms-grid-column: 1;
@@ -7518,6 +7761,9 @@ Thème pour Overlay ScrollBar
   .col-sm-21 {
     grid-column: span 21;
   }
+  .row-sm-21 {
+    grid-row: span 21;
+  }
   .col-sm-21-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -7658,6 +7904,9 @@ Thème pour Overlay ScrollBar
   }
   .col-sm-22 {
     grid-column: span 22;
+  }
+  .row-sm-22 {
+    grid-row: span 22;
   }
   .col-sm-22-start-1 {
     -ms-grid-column: 1;
@@ -7800,6 +8049,9 @@ Thème pour Overlay ScrollBar
   .col-sm-23 {
     grid-column: span 23;
   }
+  .row-sm-23 {
+    grid-row: span 23;
+  }
   .col-sm-23-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -7940,6 +8192,9 @@ Thème pour Overlay ScrollBar
   }
   .col-sm-24 {
     grid-column: span 24;
+  }
+  .row-sm-24 {
+    grid-row: span 24;
   }
   .col-sm-24-start-1 {
     -ms-grid-column: 1;
@@ -8085,6 +8340,9 @@ Thème pour Overlay ScrollBar
   .col-md-1 {
     grid-column: span 1;
   }
+  .row-md-1 {
+    grid-row: span 1;
+  }
   .col-md-1-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -8225,6 +8483,9 @@ Thème pour Overlay ScrollBar
   }
   .col-md-2 {
     grid-column: span 2;
+  }
+  .row-md-2 {
+    grid-row: span 2;
   }
   .col-md-2-start-1 {
     -ms-grid-column: 1;
@@ -8367,6 +8628,9 @@ Thème pour Overlay ScrollBar
   .col-md-3 {
     grid-column: span 3;
   }
+  .row-md-3 {
+    grid-row: span 3;
+  }
   .col-md-3-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -8507,6 +8771,9 @@ Thème pour Overlay ScrollBar
   }
   .col-md-4 {
     grid-column: span 4;
+  }
+  .row-md-4 {
+    grid-row: span 4;
   }
   .col-md-4-start-1 {
     -ms-grid-column: 1;
@@ -8649,6 +8916,9 @@ Thème pour Overlay ScrollBar
   .col-md-5 {
     grid-column: span 5;
   }
+  .row-md-5 {
+    grid-row: span 5;
+  }
   .col-md-5-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -8789,6 +9059,9 @@ Thème pour Overlay ScrollBar
   }
   .col-md-6 {
     grid-column: span 6;
+  }
+  .row-md-6 {
+    grid-row: span 6;
   }
   .col-md-6-start-1 {
     -ms-grid-column: 1;
@@ -8931,6 +9204,9 @@ Thème pour Overlay ScrollBar
   .col-md-7 {
     grid-column: span 7;
   }
+  .row-md-7 {
+    grid-row: span 7;
+  }
   .col-md-7-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -9071,6 +9347,9 @@ Thème pour Overlay ScrollBar
   }
   .col-md-8 {
     grid-column: span 8;
+  }
+  .row-md-8 {
+    grid-row: span 8;
   }
   .col-md-8-start-1 {
     -ms-grid-column: 1;
@@ -9213,6 +9492,9 @@ Thème pour Overlay ScrollBar
   .col-md-9 {
     grid-column: span 9;
   }
+  .row-md-9 {
+    grid-row: span 9;
+  }
   .col-md-9-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -9353,6 +9635,9 @@ Thème pour Overlay ScrollBar
   }
   .col-md-10 {
     grid-column: span 10;
+  }
+  .row-md-10 {
+    grid-row: span 10;
   }
   .col-md-10-start-1 {
     -ms-grid-column: 1;
@@ -9495,6 +9780,9 @@ Thème pour Overlay ScrollBar
   .col-md-11 {
     grid-column: span 11;
   }
+  .row-md-11 {
+    grid-row: span 11;
+  }
   .col-md-11-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -9635,6 +9923,9 @@ Thème pour Overlay ScrollBar
   }
   .col-md-12 {
     grid-column: span 12;
+  }
+  .row-md-12 {
+    grid-row: span 12;
   }
   .col-md-12-start-1 {
     -ms-grid-column: 1;
@@ -9777,6 +10068,9 @@ Thème pour Overlay ScrollBar
   .col-md-13 {
     grid-column: span 13;
   }
+  .row-md-13 {
+    grid-row: span 13;
+  }
   .col-md-13-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -9917,6 +10211,9 @@ Thème pour Overlay ScrollBar
   }
   .col-md-14 {
     grid-column: span 14;
+  }
+  .row-md-14 {
+    grid-row: span 14;
   }
   .col-md-14-start-1 {
     -ms-grid-column: 1;
@@ -10059,6 +10356,9 @@ Thème pour Overlay ScrollBar
   .col-md-15 {
     grid-column: span 15;
   }
+  .row-md-15 {
+    grid-row: span 15;
+  }
   .col-md-15-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -10199,6 +10499,9 @@ Thème pour Overlay ScrollBar
   }
   .col-md-16 {
     grid-column: span 16;
+  }
+  .row-md-16 {
+    grid-row: span 16;
   }
   .col-md-16-start-1 {
     -ms-grid-column: 1;
@@ -10341,6 +10644,9 @@ Thème pour Overlay ScrollBar
   .col-md-17 {
     grid-column: span 17;
   }
+  .row-md-17 {
+    grid-row: span 17;
+  }
   .col-md-17-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -10481,6 +10787,9 @@ Thème pour Overlay ScrollBar
   }
   .col-md-18 {
     grid-column: span 18;
+  }
+  .row-md-18 {
+    grid-row: span 18;
   }
   .col-md-18-start-1 {
     -ms-grid-column: 1;
@@ -10623,6 +10932,9 @@ Thème pour Overlay ScrollBar
   .col-md-19 {
     grid-column: span 19;
   }
+  .row-md-19 {
+    grid-row: span 19;
+  }
   .col-md-19-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -10763,6 +11075,9 @@ Thème pour Overlay ScrollBar
   }
   .col-md-20 {
     grid-column: span 20;
+  }
+  .row-md-20 {
+    grid-row: span 20;
   }
   .col-md-20-start-1 {
     -ms-grid-column: 1;
@@ -10905,6 +11220,9 @@ Thème pour Overlay ScrollBar
   .col-md-21 {
     grid-column: span 21;
   }
+  .row-md-21 {
+    grid-row: span 21;
+  }
   .col-md-21-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -11045,6 +11363,9 @@ Thème pour Overlay ScrollBar
   }
   .col-md-22 {
     grid-column: span 22;
+  }
+  .row-md-22 {
+    grid-row: span 22;
   }
   .col-md-22-start-1 {
     -ms-grid-column: 1;
@@ -11187,6 +11508,9 @@ Thème pour Overlay ScrollBar
   .col-md-23 {
     grid-column: span 23;
   }
+  .row-md-23 {
+    grid-row: span 23;
+  }
   .col-md-23-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -11327,6 +11651,9 @@ Thème pour Overlay ScrollBar
   }
   .col-md-24 {
     grid-column: span 24;
+  }
+  .row-md-24 {
+    grid-row: span 24;
   }
   .col-md-24-start-1 {
     -ms-grid-column: 1;
@@ -11472,6 +11799,9 @@ Thème pour Overlay ScrollBar
   .col-lg-1 {
     grid-column: span 1;
   }
+  .row-lg-1 {
+    grid-row: span 1;
+  }
   .col-lg-1-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -11612,6 +11942,9 @@ Thème pour Overlay ScrollBar
   }
   .col-lg-2 {
     grid-column: span 2;
+  }
+  .row-lg-2 {
+    grid-row: span 2;
   }
   .col-lg-2-start-1 {
     -ms-grid-column: 1;
@@ -11754,6 +12087,9 @@ Thème pour Overlay ScrollBar
   .col-lg-3 {
     grid-column: span 3;
   }
+  .row-lg-3 {
+    grid-row: span 3;
+  }
   .col-lg-3-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -11894,6 +12230,9 @@ Thème pour Overlay ScrollBar
   }
   .col-lg-4 {
     grid-column: span 4;
+  }
+  .row-lg-4 {
+    grid-row: span 4;
   }
   .col-lg-4-start-1 {
     -ms-grid-column: 1;
@@ -12036,6 +12375,9 @@ Thème pour Overlay ScrollBar
   .col-lg-5 {
     grid-column: span 5;
   }
+  .row-lg-5 {
+    grid-row: span 5;
+  }
   .col-lg-5-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -12176,6 +12518,9 @@ Thème pour Overlay ScrollBar
   }
   .col-lg-6 {
     grid-column: span 6;
+  }
+  .row-lg-6 {
+    grid-row: span 6;
   }
   .col-lg-6-start-1 {
     -ms-grid-column: 1;
@@ -12318,6 +12663,9 @@ Thème pour Overlay ScrollBar
   .col-lg-7 {
     grid-column: span 7;
   }
+  .row-lg-7 {
+    grid-row: span 7;
+  }
   .col-lg-7-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -12458,6 +12806,9 @@ Thème pour Overlay ScrollBar
   }
   .col-lg-8 {
     grid-column: span 8;
+  }
+  .row-lg-8 {
+    grid-row: span 8;
   }
   .col-lg-8-start-1 {
     -ms-grid-column: 1;
@@ -12600,6 +12951,9 @@ Thème pour Overlay ScrollBar
   .col-lg-9 {
     grid-column: span 9;
   }
+  .row-lg-9 {
+    grid-row: span 9;
+  }
   .col-lg-9-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -12740,6 +13094,9 @@ Thème pour Overlay ScrollBar
   }
   .col-lg-10 {
     grid-column: span 10;
+  }
+  .row-lg-10 {
+    grid-row: span 10;
   }
   .col-lg-10-start-1 {
     -ms-grid-column: 1;
@@ -12882,6 +13239,9 @@ Thème pour Overlay ScrollBar
   .col-lg-11 {
     grid-column: span 11;
   }
+  .row-lg-11 {
+    grid-row: span 11;
+  }
   .col-lg-11-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -13022,6 +13382,9 @@ Thème pour Overlay ScrollBar
   }
   .col-lg-12 {
     grid-column: span 12;
+  }
+  .row-lg-12 {
+    grid-row: span 12;
   }
   .col-lg-12-start-1 {
     -ms-grid-column: 1;
@@ -13164,6 +13527,9 @@ Thème pour Overlay ScrollBar
   .col-lg-13 {
     grid-column: span 13;
   }
+  .row-lg-13 {
+    grid-row: span 13;
+  }
   .col-lg-13-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -13304,6 +13670,9 @@ Thème pour Overlay ScrollBar
   }
   .col-lg-14 {
     grid-column: span 14;
+  }
+  .row-lg-14 {
+    grid-row: span 14;
   }
   .col-lg-14-start-1 {
     -ms-grid-column: 1;
@@ -13446,6 +13815,9 @@ Thème pour Overlay ScrollBar
   .col-lg-15 {
     grid-column: span 15;
   }
+  .row-lg-15 {
+    grid-row: span 15;
+  }
   .col-lg-15-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -13586,6 +13958,9 @@ Thème pour Overlay ScrollBar
   }
   .col-lg-16 {
     grid-column: span 16;
+  }
+  .row-lg-16 {
+    grid-row: span 16;
   }
   .col-lg-16-start-1 {
     -ms-grid-column: 1;
@@ -13728,6 +14103,9 @@ Thème pour Overlay ScrollBar
   .col-lg-17 {
     grid-column: span 17;
   }
+  .row-lg-17 {
+    grid-row: span 17;
+  }
   .col-lg-17-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -13868,6 +14246,9 @@ Thème pour Overlay ScrollBar
   }
   .col-lg-18 {
     grid-column: span 18;
+  }
+  .row-lg-18 {
+    grid-row: span 18;
   }
   .col-lg-18-start-1 {
     -ms-grid-column: 1;
@@ -14010,6 +14391,9 @@ Thème pour Overlay ScrollBar
   .col-lg-19 {
     grid-column: span 19;
   }
+  .row-lg-19 {
+    grid-row: span 19;
+  }
   .col-lg-19-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -14150,6 +14534,9 @@ Thème pour Overlay ScrollBar
   }
   .col-lg-20 {
     grid-column: span 20;
+  }
+  .row-lg-20 {
+    grid-row: span 20;
   }
   .col-lg-20-start-1 {
     -ms-grid-column: 1;
@@ -14292,6 +14679,9 @@ Thème pour Overlay ScrollBar
   .col-lg-21 {
     grid-column: span 21;
   }
+  .row-lg-21 {
+    grid-row: span 21;
+  }
   .col-lg-21-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -14432,6 +14822,9 @@ Thème pour Overlay ScrollBar
   }
   .col-lg-22 {
     grid-column: span 22;
+  }
+  .row-lg-22 {
+    grid-row: span 22;
   }
   .col-lg-22-start-1 {
     -ms-grid-column: 1;
@@ -14574,6 +14967,9 @@ Thème pour Overlay ScrollBar
   .col-lg-23 {
     grid-column: span 23;
   }
+  .row-lg-23 {
+    grid-row: span 23;
+  }
   .col-lg-23-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -14714,6 +15110,9 @@ Thème pour Overlay ScrollBar
   }
   .col-lg-24 {
     grid-column: span 24;
+  }
+  .row-lg-24 {
+    grid-row: span 24;
   }
   .col-lg-24-start-1 {
     -ms-grid-column: 1;
@@ -14859,6 +15258,9 @@ Thème pour Overlay ScrollBar
   .col-xl-1 {
     grid-column: span 1;
   }
+  .row-xl-1 {
+    grid-row: span 1;
+  }
   .col-xl-1-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -14999,6 +15401,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xl-2 {
     grid-column: span 2;
+  }
+  .row-xl-2 {
+    grid-row: span 2;
   }
   .col-xl-2-start-1 {
     -ms-grid-column: 1;
@@ -15141,6 +15546,9 @@ Thème pour Overlay ScrollBar
   .col-xl-3 {
     grid-column: span 3;
   }
+  .row-xl-3 {
+    grid-row: span 3;
+  }
   .col-xl-3-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -15281,6 +15689,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xl-4 {
     grid-column: span 4;
+  }
+  .row-xl-4 {
+    grid-row: span 4;
   }
   .col-xl-4-start-1 {
     -ms-grid-column: 1;
@@ -15423,6 +15834,9 @@ Thème pour Overlay ScrollBar
   .col-xl-5 {
     grid-column: span 5;
   }
+  .row-xl-5 {
+    grid-row: span 5;
+  }
   .col-xl-5-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -15563,6 +15977,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xl-6 {
     grid-column: span 6;
+  }
+  .row-xl-6 {
+    grid-row: span 6;
   }
   .col-xl-6-start-1 {
     -ms-grid-column: 1;
@@ -15705,6 +16122,9 @@ Thème pour Overlay ScrollBar
   .col-xl-7 {
     grid-column: span 7;
   }
+  .row-xl-7 {
+    grid-row: span 7;
+  }
   .col-xl-7-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -15845,6 +16265,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xl-8 {
     grid-column: span 8;
+  }
+  .row-xl-8 {
+    grid-row: span 8;
   }
   .col-xl-8-start-1 {
     -ms-grid-column: 1;
@@ -15987,6 +16410,9 @@ Thème pour Overlay ScrollBar
   .col-xl-9 {
     grid-column: span 9;
   }
+  .row-xl-9 {
+    grid-row: span 9;
+  }
   .col-xl-9-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -16127,6 +16553,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xl-10 {
     grid-column: span 10;
+  }
+  .row-xl-10 {
+    grid-row: span 10;
   }
   .col-xl-10-start-1 {
     -ms-grid-column: 1;
@@ -16269,6 +16698,9 @@ Thème pour Overlay ScrollBar
   .col-xl-11 {
     grid-column: span 11;
   }
+  .row-xl-11 {
+    grid-row: span 11;
+  }
   .col-xl-11-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -16409,6 +16841,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xl-12 {
     grid-column: span 12;
+  }
+  .row-xl-12 {
+    grid-row: span 12;
   }
   .col-xl-12-start-1 {
     -ms-grid-column: 1;
@@ -16551,6 +16986,9 @@ Thème pour Overlay ScrollBar
   .col-xl-13 {
     grid-column: span 13;
   }
+  .row-xl-13 {
+    grid-row: span 13;
+  }
   .col-xl-13-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -16691,6 +17129,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xl-14 {
     grid-column: span 14;
+  }
+  .row-xl-14 {
+    grid-row: span 14;
   }
   .col-xl-14-start-1 {
     -ms-grid-column: 1;
@@ -16833,6 +17274,9 @@ Thème pour Overlay ScrollBar
   .col-xl-15 {
     grid-column: span 15;
   }
+  .row-xl-15 {
+    grid-row: span 15;
+  }
   .col-xl-15-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -16973,6 +17417,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xl-16 {
     grid-column: span 16;
+  }
+  .row-xl-16 {
+    grid-row: span 16;
   }
   .col-xl-16-start-1 {
     -ms-grid-column: 1;
@@ -17115,6 +17562,9 @@ Thème pour Overlay ScrollBar
   .col-xl-17 {
     grid-column: span 17;
   }
+  .row-xl-17 {
+    grid-row: span 17;
+  }
   .col-xl-17-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -17255,6 +17705,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xl-18 {
     grid-column: span 18;
+  }
+  .row-xl-18 {
+    grid-row: span 18;
   }
   .col-xl-18-start-1 {
     -ms-grid-column: 1;
@@ -17397,6 +17850,9 @@ Thème pour Overlay ScrollBar
   .col-xl-19 {
     grid-column: span 19;
   }
+  .row-xl-19 {
+    grid-row: span 19;
+  }
   .col-xl-19-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -17537,6 +17993,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xl-20 {
     grid-column: span 20;
+  }
+  .row-xl-20 {
+    grid-row: span 20;
   }
   .col-xl-20-start-1 {
     -ms-grid-column: 1;
@@ -17679,6 +18138,9 @@ Thème pour Overlay ScrollBar
   .col-xl-21 {
     grid-column: span 21;
   }
+  .row-xl-21 {
+    grid-row: span 21;
+  }
   .col-xl-21-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -17819,6 +18281,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xl-22 {
     grid-column: span 22;
+  }
+  .row-xl-22 {
+    grid-row: span 22;
   }
   .col-xl-22-start-1 {
     -ms-grid-column: 1;
@@ -17961,6 +18426,9 @@ Thème pour Overlay ScrollBar
   .col-xl-23 {
     grid-column: span 23;
   }
+  .row-xl-23 {
+    grid-row: span 23;
+  }
   .col-xl-23-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -18101,6 +18569,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xl-24 {
     grid-column: span 24;
+  }
+  .row-xl-24 {
+    grid-row: span 24;
   }
   .col-xl-24-start-1 {
     -ms-grid-column: 1;
@@ -18246,6 +18717,9 @@ Thème pour Overlay ScrollBar
   .col-xxl-1 {
     grid-column: span 1;
   }
+  .row-xxl-1 {
+    grid-row: span 1;
+  }
   .col-xxl-1-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -18386,6 +18860,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xxl-2 {
     grid-column: span 2;
+  }
+  .row-xxl-2 {
+    grid-row: span 2;
   }
   .col-xxl-2-start-1 {
     -ms-grid-column: 1;
@@ -18528,6 +19005,9 @@ Thème pour Overlay ScrollBar
   .col-xxl-3 {
     grid-column: span 3;
   }
+  .row-xxl-3 {
+    grid-row: span 3;
+  }
   .col-xxl-3-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -18668,6 +19148,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xxl-4 {
     grid-column: span 4;
+  }
+  .row-xxl-4 {
+    grid-row: span 4;
   }
   .col-xxl-4-start-1 {
     -ms-grid-column: 1;
@@ -18810,6 +19293,9 @@ Thème pour Overlay ScrollBar
   .col-xxl-5 {
     grid-column: span 5;
   }
+  .row-xxl-5 {
+    grid-row: span 5;
+  }
   .col-xxl-5-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -18950,6 +19436,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xxl-6 {
     grid-column: span 6;
+  }
+  .row-xxl-6 {
+    grid-row: span 6;
   }
   .col-xxl-6-start-1 {
     -ms-grid-column: 1;
@@ -19092,6 +19581,9 @@ Thème pour Overlay ScrollBar
   .col-xxl-7 {
     grid-column: span 7;
   }
+  .row-xxl-7 {
+    grid-row: span 7;
+  }
   .col-xxl-7-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -19232,6 +19724,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xxl-8 {
     grid-column: span 8;
+  }
+  .row-xxl-8 {
+    grid-row: span 8;
   }
   .col-xxl-8-start-1 {
     -ms-grid-column: 1;
@@ -19374,6 +19869,9 @@ Thème pour Overlay ScrollBar
   .col-xxl-9 {
     grid-column: span 9;
   }
+  .row-xxl-9 {
+    grid-row: span 9;
+  }
   .col-xxl-9-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -19514,6 +20012,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xxl-10 {
     grid-column: span 10;
+  }
+  .row-xxl-10 {
+    grid-row: span 10;
   }
   .col-xxl-10-start-1 {
     -ms-grid-column: 1;
@@ -19656,6 +20157,9 @@ Thème pour Overlay ScrollBar
   .col-xxl-11 {
     grid-column: span 11;
   }
+  .row-xxl-11 {
+    grid-row: span 11;
+  }
   .col-xxl-11-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -19796,6 +20300,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xxl-12 {
     grid-column: span 12;
+  }
+  .row-xxl-12 {
+    grid-row: span 12;
   }
   .col-xxl-12-start-1 {
     -ms-grid-column: 1;
@@ -19938,6 +20445,9 @@ Thème pour Overlay ScrollBar
   .col-xxl-13 {
     grid-column: span 13;
   }
+  .row-xxl-13 {
+    grid-row: span 13;
+  }
   .col-xxl-13-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -20078,6 +20588,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xxl-14 {
     grid-column: span 14;
+  }
+  .row-xxl-14 {
+    grid-row: span 14;
   }
   .col-xxl-14-start-1 {
     -ms-grid-column: 1;
@@ -20220,6 +20733,9 @@ Thème pour Overlay ScrollBar
   .col-xxl-15 {
     grid-column: span 15;
   }
+  .row-xxl-15 {
+    grid-row: span 15;
+  }
   .col-xxl-15-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -20360,6 +20876,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xxl-16 {
     grid-column: span 16;
+  }
+  .row-xxl-16 {
+    grid-row: span 16;
   }
   .col-xxl-16-start-1 {
     -ms-grid-column: 1;
@@ -20502,6 +21021,9 @@ Thème pour Overlay ScrollBar
   .col-xxl-17 {
     grid-column: span 17;
   }
+  .row-xxl-17 {
+    grid-row: span 17;
+  }
   .col-xxl-17-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -20642,6 +21164,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xxl-18 {
     grid-column: span 18;
+  }
+  .row-xxl-18 {
+    grid-row: span 18;
   }
   .col-xxl-18-start-1 {
     -ms-grid-column: 1;
@@ -20784,6 +21309,9 @@ Thème pour Overlay ScrollBar
   .col-xxl-19 {
     grid-column: span 19;
   }
+  .row-xxl-19 {
+    grid-row: span 19;
+  }
   .col-xxl-19-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -20924,6 +21452,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xxl-20 {
     grid-column: span 20;
+  }
+  .row-xxl-20 {
+    grid-row: span 20;
   }
   .col-xxl-20-start-1 {
     -ms-grid-column: 1;
@@ -21066,6 +21597,9 @@ Thème pour Overlay ScrollBar
   .col-xxl-21 {
     grid-column: span 21;
   }
+  .row-xxl-21 {
+    grid-row: span 21;
+  }
   .col-xxl-21-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -21206,6 +21740,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xxl-22 {
     grid-column: span 22;
+  }
+  .row-xxl-22 {
+    grid-row: span 22;
   }
   .col-xxl-22-start-1 {
     -ms-grid-column: 1;
@@ -21348,6 +21885,9 @@ Thème pour Overlay ScrollBar
   .col-xxl-23 {
     grid-column: span 23;
   }
+  .row-xxl-23 {
+    grid-row: span 23;
+  }
   .col-xxl-23-start-1 {
     -ms-grid-column: 1;
         grid-column-start: 1;
@@ -21488,6 +22028,9 @@ Thème pour Overlay ScrollBar
   }
   .col-xxl-24 {
     grid-column: span 24;
+  }
+  .row-xxl-24 {
+    grid-row: span 24;
   }
   .col-xxl-24-start-1 {
     -ms-grid-column: 1;
@@ -21646,8 +22189,8 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   line-height: 1.35em;
-  font-size: 16.2px;
-  line-height: 22.68px;
+  font-size: 16px;
+  line-height: 18.9px;
   font-weight: 400;
 }
 
@@ -21663,87 +22206,156 @@ h4 {
 }
 
 h1 {
-  font-size: 35.1px;
-  line-height: 44.46px;
+  font-size: 51.68px;
+  line-height: 55.233px;
 }
 
 @media (min-width: 576px) {
   h1 {
-    font-size: 40.5px;
-    line-height: 51.3px;
+    font-size: 58.2464px;
+    line-height: 62.25084px;
   }
 }
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 54px;
-    line-height: 68.4px;
+    font-size: 60.8px;
+    line-height: 64.98px;
   }
 }
 
 @media (min-width: 992px) {
   h1 {
-    font-size: 62.1px;
-    line-height: 78.66px;
+    font-size: 63.84px;
+    line-height: 68.229px;
   }
 }
 
 h2 {
-  font-size: 23.4px;
-  line-height: 29.64px;
+  font-size: 40.8px;
+  line-height: 43.605px;
 }
 
 @media (min-width: 576px) {
   h2 {
-    font-size: 27px;
-    line-height: 34.2px;
+    font-size: 45.984px;
+    line-height: 49.1454px;
   }
 }
 
 @media (min-width: 768px) {
   h2 {
-    font-size: 36px;
-    line-height: 45.6px;
+    font-size: 48px;
+    line-height: 51.3px;
   }
 }
 
 @media (min-width: 992px) {
   h2 {
-    font-size: 41.4px;
-    line-height: 52.44px;
+    font-size: 50.4px;
+    line-height: 53.865px;
+  }
+}
+
+h3 {
+  font-size: 32.64px;
+  line-height: 34.884px;
+}
+
+@media (min-width: 576px) {
+  h3 {
+    font-size: 36.7872px;
+    line-height: 39.31632px;
+  }
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 38.4px;
+    line-height: 41.04px;
+  }
+}
+
+@media (min-width: 992px) {
+  h3 {
+    font-size: 40.32px;
+    line-height: 43.092px;
+  }
+}
+
+h4 {
+  font-size: 24.48px;
+  line-height: 26.163px;
+}
+
+@media (min-width: 576px) {
+  h4 {
+    font-size: 27.5904px;
+    line-height: 29.48724px;
+  }
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 28.8px;
+    line-height: 30.78px;
+  }
+}
+
+@media (min-width: 992px) {
+  h4 {
+    font-size: 30.24px;
+    line-height: 32.319px;
   }
 }
 
 p {
   margin: 0 0 1.5rem;
   font-weight: 400;
-  font-size: 16.2px;
-  line-height: 20.52px;
+  font-size: 17.6px;
+  line-height: 20.79px;
 }
 
 @media (min-width: 576px) {
   p {
-    font-size: 18.63px;
-    line-height: 23.598px;
+    font-size: 16.8px;
+    line-height: 19.845px;
   }
 }
 
 @media (min-width: 768px) {
   p {
-    font-size: 20.25px;
-    line-height: 25.65px;
+    font-size: 16px;
+    line-height: 18.9px;
   }
 }
 
 @media (min-width: 992px) {
   p {
-    font-size: 21.06px;
-    line-height: 26.676px;
+    font-size: 16.8px;
+    line-height: 19.845px;
   }
+}
+
+b,
+strong {
+  font-weight: 700;
 }
 
 figcaption p {
   font-weight: 300;
+}
+
+/* Links */
+a {
+  color: #8464fb;
+  text-decoration: none;
+  -webkit-transition: color .33s ease;
+  transition: color .33s ease;
+}
+
+a:hover {
+  color: #169673;
 }
 
 /**********/
@@ -21754,16 +22366,49 @@ figcaption p {
 }
 
 .segment {
-  width: calc(100% - 2%);
+  width: calc(100% - 4% - 0%);
+  padding-left: 4%;
+  padding-right: 0%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[24];
       grid-template-columns: repeat(24, 1fr);
   gap: 0;
-  padding-left: 2%;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+}
+
+@media (min-width: 768px) {
+  .segment {
+    width: calc(100% - 2% - 0%);
+    padding-left: 2%;
+    padding-right: 0%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .segment {
+    width: calc(100% - 4% - 2%);
+    padding-left: 4%;
+    padding-right: 2%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .segment {
+    width: calc(100% - 5% - 3%);
+    padding-left: 5%;
+    padding-right: 3%;
+  }
+}
+
+@media (min-width: 2100px) {
+  .segment {
+    width: calc(100% - 10% - 5%);
+    padding-left: 10%;
+    padding-right: 5%;
+  }
 }
 
 .segment .conteneur {
@@ -21782,123 +22427,201 @@ figcaption p {
   -ms-flex-item-align: start;
       align-self: flex-start;
   min-width: calc(100% - 60px);
-  height: calc(100% - 40px);
 }
 
-.segment .conteneur::after {
-  content: '';
-  display: block;
-  background-color: rgba(255, 255, 255, 0.33);
-  height: 100%;
-  width: auto;
-  margin: 0 -40px -20px -20px;
+.segment .conteneur > * {
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 #single .post-header {
-  -ms-grid-rows: min-content min-content min-content;
-      grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
-      grid-template-rows: min-content min-content min-content;
+  width: calc(100% - 2%);
+  padding-left: 2%;
+  position: relative;
 }
 
 #single .post-header-image {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 24;
-  grid-column: 1/25;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  grid-row: 1/4;
-  height: 400px;
-}
-
-@media (min-width: 768px) {
-  #single .post-header-image {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1/3;
-  }
+  margin: 0 0 0 -2%;
+  display: block;
+  min-width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -10;
 }
 
 #single .post-header-image img {
   display: block;
   width: 100%;
-  height: inherit;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
-#single .post-header-title {
-  font-size: 54px;
-  line-height: 68.4px;
-  text-align: end;
-  display: block;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 20px 40px 20px 20px;
-  margin: 0;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 24;
-  grid-column: 1/25;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
+#single .post-header .conteneurs-wrap {
+  position: relative;
+  z-index: 10;
+  padding-top: 5rem;
+  width: calc(100% - 2% - 0%);
+  padding-left: 2%;
+  padding-right: 0%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[24];
+      grid-template-columns: repeat(24, 1fr);
+  gap: 0;
 }
 
 @media (min-width: 768px) {
-  #single .post-header-title {
-    font-size: 72px;
-    line-height: 91.2px;
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 13;
-    grid-column: 6/19;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
+  #single .post-header .conteneurs-wrap {
+    width: calc(100% - 1% - 0%);
+    padding-left: 1%;
+    padding-right: 0%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #single .post-header .conteneurs-wrap {
+    width: calc(100% - 2% - 2%);
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+
+@media (min-width: 1400px) {
+  #single .post-header .conteneurs-wrap {
+    width: calc(100% - 2.5% - 3%);
+    padding-left: 2.5%;
+    padding-right: 3%;
+  }
+}
+
+@media (min-width: 2100px) {
+  #single .post-header .conteneurs-wrap {
+    width: calc(100% - 5% - 5%);
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
 #single .post-header-meta {
-  font-family: 'American Typewriter', serif;
-  font-weight: normal;
-  font-size: 23.625px;
-  line-height: 29.925px;
-  display: block;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 0 0 auto;
+}
+
+#single .post-header-meta .meta-date {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 20px 40px 20px 20px;
-  margin: 0;
-  -ms-grid-column: 11;
-  -ms-grid-column-span: 14;
-  grid-column: 11/25;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  font-size: 18.36px;
+  line-height: 19.62225px;
 }
 
 @media (min-width: 768px) {
-  #single .post-header-meta {
-    font-size: 31.5px;
-    line-height: 39.9px;
-    -ms-grid-column: 19;
-    -ms-grid-column-span: 6;
-    grid-column: 19/25;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
+  #single .post-header-meta .meta-date {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
   }
 }
 
-#single .post-header-meta ul {
+@media (min-width: 576px) {
+  #single .post-header-meta .meta-date {
+    font-size: 20.6928px;
+    line-height: 22.11543px;
+  }
+}
+
+@media (min-width: 768px) {
+  #single .post-header-meta .meta-date {
+    font-size: 21.6px;
+    line-height: 23.085px;
+  }
+}
+
+@media (min-width: 992px) {
+  #single .post-header-meta .meta-date {
+    font-size: 22.68px;
+    line-height: 24.23925px;
+  }
+}
+
+#single .post-header-meta .meta-tags {
   margin: 0;
   list-style: none;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0 1rem;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+}
+
+#single .post-header-meta .meta-tags h4 {
+  border: none;
+  font-size: .75em;
+  font-size: 18.36px;
+  line-height: 19.62225px;
+}
+
+@media (min-width: 576px) {
+  #single .post-header-meta .meta-tags h4 {
+    font-size: 20.6928px;
+    line-height: 22.11543px;
+  }
+}
+
+@media (min-width: 768px) {
+  #single .post-header-meta .meta-tags h4 {
+    font-size: 21.6px;
+    line-height: 23.085px;
+  }
+}
+
+@media (min-width: 992px) {
+  #single .post-header-meta .meta-tags h4 {
+    font-size: 22.68px;
+    line-height: 24.23925px;
+  }
+}
+
+@media (min-width: 768px) {
+  #single .post-header-meta .meta-tags {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 4;
+    grid-column: 3/7;
+  }
 }
 
 #main-header {
   width: calc(100% - 10px);
   margin: 0 10px 2px 0;
   padding-left: 0;
+  padding-right: 0;
 }
 
 #main-header a {
@@ -21910,7 +22633,7 @@ figcaption p {
 }
 
 #main-header a:hover {
-  background-color: #CDF8A2;
+  background-color: #7CFEDA;
   -webkit-box-shadow: 0px 2px currentColor;
           box-shadow: 0px 2px currentColor;
 }
@@ -21992,13 +22715,15 @@ figcaption p {
 }
 
 #main-header #site-header-home > a {
+  position: relative;
   display: block;
   height: 100%;
   width: 100%;
+  min-height: 10rem;
 }
 
 #main-header #site-header-home > a:hover {
-  background-color: #3405a1;
+  background-color: #2e1496;
 }
 
 #main-header #site-header-home > a:hover img {
@@ -22008,9 +22733,13 @@ figcaption p {
 }
 
 #main-header #site-header-home > a img {
+  position: absolute;
   display: block;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  min-height: 5rem;
+  max-height: 10rem;
+  width: 85%;
+  bottom: 0;
 }
 
 #main-header .main-nav {
@@ -22051,7 +22780,7 @@ figcaption p {
   border: none;
   border-top: solid #D0D0D0 2px;
   border-bottom: solid black 2px;
-  font-size: 27px;
+  font-size: 24px;
   height: 40px;
 }
 
@@ -22093,8 +22822,8 @@ figcaption p {
   #main-header .main-nav .nav-header-wrapper {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -ms-grid-rows: minmax(10rem, 2fr) minmax(3rem, 5rem);
+        grid-template-rows: minmax(10rem, 2fr) minmax(3rem, 5rem);
     max-height: 900px;
     padding-bottom: 2px;
   }
@@ -22106,27 +22835,27 @@ figcaption p {
   height: 100%;
   font-family: 'American Typewriter', serif;
   font-weight: normal;
-  font-size: 24.3px;
-  line-height: 30.78px;
+  font-size: 21.6px;
+  line-height: 23.085px;
 }
 
 @media (min-width: 768px) {
   #main-header .main-nav .nav-header-wrapper .menu-item {
-    font-size: 22.5px;
-    line-height: 28.5px;
+    font-size: 20px;
+    line-height: 21.375px;
   }
 }
 
 @media (min-width: 992px) {
   #main-header .main-nav .nav-header-wrapper .menu-item {
-    font-size: 28.8px;
-    line-height: 36.48px;
+    font-size: 25.6px;
+    line-height: 27.36px;
   }
 }
 
 #main-header .main-nav .nav-header-wrapper .menu-item.current_page_item a,
 #main-header .main-nav .nav-header-wrapper .menu-item.current-menu-item a {
-  background-color: #EAD8FC;
+  background-color: #2BE7B4;
   -webkit-box-shadow: 0px 2px currentColor;
           box-shadow: 0px 2px currentColor;
 }
@@ -22359,21 +23088,21 @@ figcaption p {
   height: 100%;
   font-family: 'American Typewriter', serif;
   font-weight: normal;
-  font-size: 24.3px;
-  line-height: 30.78px;
+  font-size: 21.6px;
+  line-height: 23.085px;
 }
 
 @media (min-width: 768px) {
   #main-footer .footer-nav .nav-footer-wrapper .menu-item {
-    font-size: 22.5px;
-    line-height: 28.5px;
+    font-size: 20px;
+    line-height: 21.375px;
   }
 }
 
 @media (min-width: 992px) {
   #main-footer .footer-nav .nav-footer-wrapper .menu-item {
-    font-size: 28.8px;
-    line-height: 36.48px;
+    font-size: 25.6px;
+    line-height: 27.36px;
   }
 }
 
@@ -22421,22 +23150,22 @@ figcaption p {
 }
 
 #main-footer .footer-nav .nav-footer-wrapper .menu-item.nav-rs-facebook a::after, #main-footer .footer-nav .nav-footer-wrapper .menu-item.nav-rs-instagram a::after {
-  font-size: 24.3px;
-  line-height: 18.468px;
+  font-size: 21.6px;
+  line-height: 13.851px;
   text-align: center;
 }
 
 @media (min-width: 768px) {
   #main-footer .footer-nav .nav-footer-wrapper .menu-item.nav-rs-facebook a::after, #main-footer .footer-nav .nav-footer-wrapper .menu-item.nav-rs-instagram a::after {
-    font-size: 22.5px;
-    line-height: 17.1px;
+    font-size: 20px;
+    line-height: 12.825px;
   }
 }
 
 @media (min-width: 992px) {
   #main-footer .footer-nav .nav-footer-wrapper .menu-item.nav-rs-facebook a::after, #main-footer .footer-nav .nav-footer-wrapper .menu-item.nav-rs-instagram a::after {
-    font-size: 28.8px;
-    line-height: 21.888px;
+    font-size: 25.6px;
+    line-height: 16.416px;
   }
 }
 

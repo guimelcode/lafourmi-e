@@ -4,6 +4,17 @@
     <meta charset="<?php bloginfo('charset');?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icon/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icon/apple-touch-icon.png">
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icon/icon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icon/icon-72.png" type="image/png" sizes="72x72" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icon/icon-96.png" type="image/png" sizes="96x96" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icon/icon-128.png" type="image/png" sizes="128x128" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icon/icon-144.png" type="image/png" sizes="144x144" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icon/icon-152.png" type="image/png" sizes="152x152" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icon/icon-192.png" type="image/png" sizes="192x192" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icon/icon-384.png" type="image/png" sizes="384x384" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/icon/icon-512.png" type="image/png" sizes="512x512" />
     <?php wp_head();?>
 </head>
 <body  <?php body_class();?> >
